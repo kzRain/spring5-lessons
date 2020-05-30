@@ -1,0 +1,10 @@
+jar {
+    manifest {
+        attributes(
+                "Created-By": "Ruslan Beyganov",
+                "Specification-Title": "Pro Spring 5 for CodeForce",
+                "Main-Class" : "kz.cf.spring5.hello",
+                "Class-Path": configurations.compile.collect { it.getName() }.join(' ')
+        )
+    }
+}
