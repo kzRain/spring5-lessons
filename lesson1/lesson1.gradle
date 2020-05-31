@@ -1,4 +1,6 @@
 subprojects {
+
+
     group 'kz.cf.spring5.hello'
     apply plugin: 'java'
 
@@ -9,7 +11,11 @@ subprojects {
     }
 
     dependencies {
-        compile spring.context, misc.slf4jJcl, misc.logback, boot.starter
-        testCompile testing.junit
+        compile spring.context, misc.slf4jJcl, misc.logback, boot.starter,
+                boot.starterJpa, db.h2, boot.starterTest
+//        testCompile testing.junit
+        testImplementation('org.springframework.boot:spring-boot-starter-test') {
+            exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+        }
     }
 }

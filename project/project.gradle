@@ -1,0 +1,16 @@
+subprojects {
+    group 'kz.cf.spring5.hello'
+    apply plugin: 'java'
+
+    /*Task that copies all the dependencies under build/libs */
+    task copyDependencies(type: Copy) {
+        from configurations.compile
+        into 'build/libs'
+    }
+
+    dependencies {
+        compile spring.context, misc.slf4jJcl, misc.logback, boot.starter, spring.bootJar
+        testCompile testing.junit
+
+    }
+}

@@ -1,12 +1,16 @@
 rootProject.name = 'pro-spring-5'
 
+include 'project:server'
+include 'project:service'
+include 'project:point'
 
 include 'lesson1:hello-world'
 include 'lesson1:schedule-demo'
+include 'lesson1:repo-h2'
 
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
 		'"Spring Pro, Fifth Edition" ' +
-		' published by Apress in order to learn and practice with all Spring Web libraries. ')
+		' published by CodeForce in order to learn and practice with all Spring Web libraries. ')
 
 //we check if the modules have gradle configuration files
 rootProject.children.each { project ->
