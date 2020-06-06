@@ -1,0 +1,15 @@
+dependencies {
+	compile project(':lesson2:plain-jdbc')
+	compile db.postgresql, db.dbcp2
+}
+
+jar {
+	manifest {
+		attributes(
+				"Created-By": "Ruslan Beyganov",
+				"Specification-Title": "Pro Spring 5 for CodeForce",
+				"Main-Class" : "kz.cf.spring5.lesson2",
+				"Class-Path": configurations.compile.collect { it.getName() }.join(' ')
+		)
+	}
+}

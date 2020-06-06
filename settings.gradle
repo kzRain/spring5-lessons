@@ -8,6 +8,14 @@ include 'lesson1:hello-world'
 include 'lesson1:schedule-demo'
 include 'lesson1:repo-h2'
 
+include 'lesson2:plain-jdbc'
+include 'lesson2:spring-jdbc-annotations'
+include 'lesson2:spring-jdbc-embedded'
+include 'lesson2:spring-jdbc-namedparam'
+include 'lesson2:spring-jdbc-resultsetextractor'
+include 'lesson2:spring-jdbc-rowmapper'
+include 'lesson2:spring-boot-jdbc'
+
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
 		'"Spring Pro, Fifth Edition" ' +
 		' published by CodeForce in order to learn and practice with all Spring Web libraries. ')
