@@ -37,7 +37,7 @@ public class JdbcSingerDao implements SingerDao, InitializingBean {
 
 	// Unimplemented methods, add implementations and tests as practice
 	@Override public List<Singer> findAll() {
-		throw new NotImplementedException("findAll");
+		return jdbcTemplate.queryForList("SELECT first_name FROM public.singer", Singer.class);
 	}
 
 	@Override public List<Singer> findByFirstName(String firstName) {

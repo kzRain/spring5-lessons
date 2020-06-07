@@ -20,6 +20,7 @@ public class Application {
 		assert (ctx != null);
 
 		SingerDao singerDao = ctx.getBean(SingerDao.class);
+		logger.info("All record count is " + singerDao.findAll().size());
 		String singerName = singerDao.findNameById(5L);
 		logger.info("Retrieved singer: " + singerName);
 

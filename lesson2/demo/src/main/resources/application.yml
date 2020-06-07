@@ -1,0 +1,15 @@
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task
+    username: task
+    password: task
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl.auto: update
+    show-sql: true
+server:
+  port: 8090
