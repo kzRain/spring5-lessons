@@ -1,5 +1,5 @@
 subprojects {
-    group 'kz.cf.spring5.hello'
+    group 'com.codeforce.product'
     apply plugin: 'java'
 
     /*Task that copies all the dependencies under build/libs */
@@ -9,8 +9,12 @@ subprojects {
     }
 
     dependencies {
-        compile spring.context, misc.slf4jJcl, misc.logback, boot.starter, spring.bootJar
-        testCompile testing.junit
-
+        compile misc.slf4jJcl, misc.logback, boot.starter,
+                boot.starterJpa, boot.starterTest, db.postgresql,
+        boot.starterWeb
+//        testCompile testing.junit
+        testImplementation('org.springframework.boot:spring-boot-starter-test') {
+            exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+        }
     }
 }
