@@ -2,7 +2,6 @@ package com.codeforce.product.model;
 
 
 import javax.persistence.*;
-import java.util.Optional;
 
 @Entity(name = "pack")
 public class Pack {

@@ -2,17 +2,20 @@ package com.codeforce.product.config;
 
 import com.codeforce.product.model.Point;
 import com.codeforce.product.repo.PointRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.util.UUID;
 
-@Service
+//@Service
 public class Dbunit {
 
-    @Autowired
+    private final
     PointRepository pointRepository;
+
+    public Dbunit(PointRepository pointRepository) {
+        this.pointRepository = pointRepository;
+    }
 
     @PostConstruct
     public void pointInit(){

@@ -1,13 +1,13 @@
 package com.codeforce.product;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class ProductApplicationTests {
 
-	@Test
-	fun contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

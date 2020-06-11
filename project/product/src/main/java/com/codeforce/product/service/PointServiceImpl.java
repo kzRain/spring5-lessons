@@ -1,20 +1,22 @@
 package com.codeforce.product.service;
 
-import com.example.demo6.Entity.Point;
-import com.example.demo6.Repo.PointRepository;
+import com.codeforce.product.model.Point;
+import com.codeforce.product.repo.PointRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
 @Service
-public class PointServiceImpl implements  PointService {
+public class PointServiceImpl implements PointService {
+    
    @Autowired
    PointRepository pointRepository;
     @Override
     public ArrayList<Point> getAllFree() {
         return pointRepository.findAllFree();
     }
+
 
     @Override
     public void addBoxToPoint(Point point, int i) {

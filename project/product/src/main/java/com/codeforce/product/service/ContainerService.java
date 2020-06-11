@@ -1,7 +1,6 @@
 package com.codeforce.product.service;
 
 import com.codeforce.product.model.Container;
-import com.codeforce.product.model.State;
 import com.codeforce.product.repo.ContainerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,7 +24,7 @@ public class ContainerService {
         }
     }
 
-    public Container  getContainerById(Long id) {
+    public Container getContainerById(Long id) {
         Optional<Container> container = containerRepository.findById(id);
         if(container.isPresent()) {
             return container.get();
