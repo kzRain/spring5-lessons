@@ -14,8 +14,8 @@ public class Point {
     private Long id;
     private  String num;
     private String address;
-    private int boxNum;
-    private int busy;
+    private Integer boxNum;
+    private Integer busy;
     private UUID token;
 
     public Point() {
@@ -54,19 +54,19 @@ public class Point {
         this.address = address;
     }
 
-    public int getBoxNum() {
+    public Integer getBoxNum() {
         return boxNum;
     }
 
-    public void setBoxNum(int boxNum) {
+    public void setBoxNum(Integer boxNum) {
         this.boxNum = boxNum;
     }
 
-    public int getBusy() {
+    public Integer getBusy() {
         return busy;
     }
 
-    public void setBusy(int busy) {
+    public void setBusy(Integer busy) {
         this.busy = busy;
     }
 

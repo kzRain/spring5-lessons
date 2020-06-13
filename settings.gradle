@@ -16,6 +16,9 @@ include 'lesson2:spring-jdbc-resultsetextractor'
 include 'lesson2:spring-jdbc-rowmapper'
 include 'lesson2:spring-boot-jdbc'
 
+include 'lesson3:hibernate-crud'
+include 'lesson3:hibernate-base'
+
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
 		'"Spring Pro, Fifth Edition" ' +
 		' published by CodeForce in order to learn and practice with all Spring Web libraries. ')

@@ -1,0 +1,4 @@
+dependencies {
+	compile project(':lesson2:plain-jdbc')
+	compile db.dbcp2
+}
