@@ -1,0 +1,16 @@
+apply plugin: 'idea'
+
+dependencies {
+	annotationProcessor hibernate.jpaModelGen
+	compile hibernate.querydslapt
+}
+
+jar {
+	manifest {
+		attributes(
+				"Updated-By"      : "Ruslan Beyganov",
+				"Specification-Title": "Pro Spring 5",
+				'Main-Class': 'kz.cf.spring.lesson4.SpringJPADemo',
+				"Class-Path": configurations.compile.collect { it.getName() }.join(' '))
+	}
+}

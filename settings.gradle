@@ -18,6 +18,13 @@ include 'lesson2:spring-boot-jdbc'
 
 include 'lesson3:hibernate-crud'
 include 'lesson3:hibernate-base'
+include 'lesson3:jpa-crud'
+include 'lesson3:jpa-criteria'
+include 'lesson3:spring-data-jpa'
+include 'lesson3:spring-data-jpa-audit'
+include 'lesson3:hibernate-envers'
+include 'lesson3:spring-data-jpa-alt'
+include 'lesson3:boot-jpa'
 
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
 		'"Spring Pro, Fifth Edition" ' +

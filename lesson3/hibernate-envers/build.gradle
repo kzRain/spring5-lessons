@@ -1,0 +1,13 @@
+
+dependencies {
+	compile spring.aspects, spring.data, misc.guava, hibernate.envers
+}
+
+jar {
+	manifest {
+		attributes("Updated-By"      : "Ruslan Beyganov",
+				"Specification-Title": "Pro Spring 5",
+				"Main-Class"         : "kz.cf.spring.lesson3.SpringEnversJPADemo",
+				"Class-Path"         : configurations.compile.collect { it.getName() }.join(' '))
+	}
+}
