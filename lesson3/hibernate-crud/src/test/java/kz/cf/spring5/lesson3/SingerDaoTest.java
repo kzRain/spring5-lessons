@@ -20,7 +20,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * Created by iuliana.cosmina on 4/22/17.
+ * Created  on 4/22/17.
  */
 public class SingerDaoTest {
 	private static Logger logger = LoggerFactory.getLogger(SingerDaoTest.class);

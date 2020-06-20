@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by iuliana.cosmina on 4/21/17.
+ * Created  on 4/21/17.
  */
 @Entity
 @Table(name = "album")

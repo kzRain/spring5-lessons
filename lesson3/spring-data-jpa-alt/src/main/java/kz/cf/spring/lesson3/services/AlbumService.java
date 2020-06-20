@@ -6,7 +6,7 @@ import kz.cf.spring.lesson3.entities.Singer;
 import java.util.List;
 
 /**
- * Created by iuliana.cosmina on 5/7/17.
+ * Created  on 5/7/17.
  */
 public interface AlbumService {
 	List<Album> findBySinger(Singer singer);

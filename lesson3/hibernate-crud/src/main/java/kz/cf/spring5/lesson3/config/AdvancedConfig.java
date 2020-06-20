@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * Created by iuliana.cosmina on 4/21/17.
+ * Created  on 4/21/17.
  */
 @Configuration
 @ComponentScan(basePackages = "kz.cf.spring5.lesson3")

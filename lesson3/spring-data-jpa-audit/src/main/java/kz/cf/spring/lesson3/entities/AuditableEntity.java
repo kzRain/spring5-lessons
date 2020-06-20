@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.Optional;
 
 /**
- * Created by iuliana.cosmina on 5/7/17.
+ * Created  on 5/7/17.
  */
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)

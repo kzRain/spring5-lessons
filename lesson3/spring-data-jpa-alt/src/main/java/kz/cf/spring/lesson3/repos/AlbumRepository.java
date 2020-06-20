@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 /**
- * Created by iuliana.cosmina on 5/7/17.
+ * Created  on 5/7/17.
  */
 public interface AlbumRepository extends JpaRepository<Album, Long> {
 	List<Album> findBySinger(Singer singer);

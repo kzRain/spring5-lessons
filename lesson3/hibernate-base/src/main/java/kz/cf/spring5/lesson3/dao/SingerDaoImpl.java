@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * Created by iuliana.cosmina on 4/21/17.
+ * Created  on 4/21/17.
  */
 @SuppressWarnings("unchecked")
 @Transactional

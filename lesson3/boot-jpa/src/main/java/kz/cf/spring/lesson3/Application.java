@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * Created by iuliana.cosmina on 5/12/17.
+ * Created  on 5/12/17.
  */
 @SpringBootApplication(scanBasePackages = "kz.cf.spring.lesson4.config")
 public class Application implements CommandLineRunner {

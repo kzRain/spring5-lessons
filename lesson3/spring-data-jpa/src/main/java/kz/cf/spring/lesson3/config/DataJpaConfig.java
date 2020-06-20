@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 /**
- * Created by iuliana.cosmina on 4/29/17.
+ * Created  on 4/29/17.
  */
 @Configuration
 @EnableTransactionManagement

@@ -1,7 +1,7 @@
 package kz.cf.spring5.hello.common;
 
 /**
- * Created by iuliana.cosmina on 4/9/17.
+ * Created  on 4/9/17.
  */
 public class Contact {
 

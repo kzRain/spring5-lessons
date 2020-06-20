@@ -17,7 +17,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 /**
- * Created by iuliana.cosmina on 5/7/17.
+ * Created  on 5/7/17.
  */
 public class SingerDataJPATest {
 

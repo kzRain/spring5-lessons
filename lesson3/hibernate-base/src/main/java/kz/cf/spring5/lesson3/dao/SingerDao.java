@@ -5,7 +5,7 @@ import kz.cf.spring5.lesson3.entities.Singer;
 import java.util.List;
 
 /**
- * Created by iuliana.cosmina on 4/21/17.
+ * Created  on 4/21/17.
  */
 public interface SingerDao {
 

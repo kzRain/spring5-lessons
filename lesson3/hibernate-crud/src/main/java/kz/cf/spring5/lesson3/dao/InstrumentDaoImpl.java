@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
 
 /**
- * Created by iuliana.cosmina on 4/23/17.
+ * Created  on 4/23/17.
  */
 @Transactional
 @Repository("instrumentDao")

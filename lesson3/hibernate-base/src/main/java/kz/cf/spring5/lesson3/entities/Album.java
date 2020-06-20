@@ -7,7 +7,7 @@ import java.util.Date;
 import static javax.persistence.GenerationType.IDENTITY;
 
 /**
- * Created by iuliana.cosmina on 4/21/17.
+ * Created  on 4/21/17.
  */
 @Entity
 @Table(name = "album")

@@ -26,6 +26,13 @@ include 'lesson3:hibernate-envers'
 include 'lesson3:spring-data-jpa-alt'
 include 'lesson3:boot-jpa'
 
+include 'lesson4:base-dao'
+include 'lesson4:transactions-xml'
+include 'lesson4:transactions-jta'
+include 'lesson4:transactions-programmatic'
+include 'lesson4:transactions-annotation'
+include 'lesson4:boot-jta'
+
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
 		'"Spring Pro, Fifth Edition" ' +
 		' published by CodeForce in order to learn and practice with all Spring Web libraries. ')
