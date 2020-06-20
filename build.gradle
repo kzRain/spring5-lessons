@@ -1,12 +1,12 @@
 ext {
     //spring libs
-    springVersion = '5.2.6.RELEASE'
-    bootVersion = '2.3.0.RELEASE'
-    springDataVersion = '2.3.0.RELEASE'
-    springAmqpVersion = '2.2.7.RELEASE'
-    springSecurityVersion = '5.3.3.RELEASE'
-    springBatchVersion = '4.2.2.RELEASE'
-    springIntegrationVersion = '2.3.0.RELEASE'
+    springVersion = '5.0.10.RELEASE'
+    bootVersion = '2.0.6.RELEASE'
+    springDataVersion = '2.0.11.RELEASE'
+    springAmqpVersion = '2.1.0.RELEASE'
+    springSecurityVersion = '5.0.2.BUILD-SNAPSHOT'
+    springBatchVersion = '4.0.0.RELEASE'
+    springIntegrationVersion = '5.0.2.BUILD-SNAPSHOT'
 
     //logging libs
     slf4jVersion = '1.7.25'
@@ -75,8 +75,7 @@ ext {
             batchCore         : "org.springframework.batch:spring-batch-core:$springBatchVersion",
             batchIntegration  : "org.springframework.batch:spring-batch-integration:$springBatchVersion",
             integrationFile   : "org.springframework.integration:spring-integration-file:$springIntegrationVersion",
-            webflux           : "org.springframework:spring-webflux:$springVersion",
-            bootJar           : "io.spring.gradle:dependency-management-plugin:0.5.3.RELEASE"
+            webflux           : "org.springframework:spring-webflux:$springVersion"
     ]
 
     hibernate = [
@@ -100,6 +99,7 @@ ext {
             starterAop      : "org.springframework.boot:spring-boot-starter-aop:$bootVersion",
             starterJdbc     : "org.springframework.boot:spring-boot-starter-jdbc:$bootVersion",
             starterJpa      : "org.springframework.boot:spring-boot-starter-data-jpa:$bootVersion",
+            redis           : "org.springframework.boot:spring-boot-starter-data-redis:$bootVersion",
             starterJta      : "org.springframework.boot:spring-boot-starter-jta-atomikos:$bootVersion",
             starterJms      : "org.springframework.boot:spring-boot-starter-artemis:$bootVersion",
             starterRabbitmq : "org.springframework.boot:spring-boot-starter-amqp:$bootVersion",
@@ -146,6 +146,7 @@ ext {
             jacksonDatabind: "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion",
             poi            : "org.apache.poi:poi:$poiVersion",
             io             : "commons-io:commons-io:2.5",
+            jedis		   : 'redis.clients:jedis:2.9.0',
     ]
 
     web = [
@@ -168,13 +169,13 @@ ext {
     ]
 
     db = [
-            postgresql: "org.postgresql:postgresql:$postgresqlVersion",
-            mysql     : "mysql:mysql-connector-java:$mysqlVersion",
-            derby     : "org.apache.derby:derby:$derbyVersion",
-            dbcp2     : "org.apache.commons:commons-dbcp2:$dbcpVersion",
-            dbcp      : "commons-dbcp:commons-dbcp:1.4",
-            h2        : "com.h2database:h2:$h2Version",
-            hsqldb    : "org.hsqldb:hsqldb:2.4.0"
+            postgresql : "org.postgresql:postgresql:$postgresqlVersion",
+            mysql : "mysql:mysql-connector-java:$mysqlVersion",
+            derby : "org.apache.derby:derby:$derbyVersion",
+            dbcp2 : "org.apache.commons:commons-dbcp2:$dbcpVersion",
+            dbcp  : "commons-dbcp:commons-dbcp:1.4",
+            h2    : "com.h2database:h2:$h2Version",
+            hsqldb: "org.hsqldb:hsqldb:2.4.0"
     ]
 }
 
