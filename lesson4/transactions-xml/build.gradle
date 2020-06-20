@@ -6,7 +6,7 @@ jar {
 	manifest {
 		attributes("Created-By"      : "Ruslan Beiganov",
 				"Specification-Title": "Pro Spring 5",
-				"Main-Class"         : "kz.cf.spring.lesson4.TxDeclarativeDemo",
+				"Main-Class"         : "kz.cf.spring5.lesson4.TxDeclarativeDemo",
 				"Class-Path"         : configurations.compile.collect { it.getName() }.join(' '))
 	}
 }

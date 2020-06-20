@@ -7,7 +7,7 @@ jar {
 	manifest {
 		attributes("Updated-By"      : "Ruslan Beyganov",
 				"Specification-Title": "Pro Spring 5",
-				"Main-Class"         : "kz.cf.spring.lesson3.SpringEnversJPADemo",
+				"Main-Class"         : "kz.cf.spring5.lesson3.SpringEnversJPADemo",
 				"Class-Path"         : configurations.compile.collect { it.getName() }.join(' '))
 	}
 }

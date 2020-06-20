@@ -1,4 +1,4 @@
-package kz.cf.spring.lesson_5.config;
+package kz.cf.spring5.lesson_5.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -15,7 +15,7 @@ import javax.persistence.EntityManagerFactory;
  * Created  on 5/17/17.
  */
 @Configuration
-@ComponentScan(basePackages = "kz.cf.spring.lesson_5")
+@ComponentScan(basePackages = "kz.cf.spring5.lesson_5")
 public class ServicesConfig {
 
 	@Autowired EntityManagerFactory entityManagerFactory;

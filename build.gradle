@@ -4,7 +4,7 @@ ext {
     bootVersion = '2.3.0.RELEASE'
     springDataVersion = '2.3.0.RELEASE'
     springAmqpVersion = '2.2.7.RELEASE'
-    springSecurityVersion = '5.2.6.RELEASE'
+    springSecurityVersion = '5.3.3.RELEASE'
     springBatchVersion = '4.2.2.RELEASE'
     springIntegrationVersion = '2.3.0.RELEASE'
 
@@ -65,7 +65,7 @@ ext {
             test              : "org.springframework:spring-test:$springVersion",
             jms               : "org.springframework:spring-jms:$springVersion",
             oxm               : "org.springframework:spring-oxm:$springVersion",
-            securityWeb       : "org.springframework. :$springSecurityVersion",
+            securityWeb       : "org.springframework.security:spring-security-web:$springSecurityVersion",
             securityConfig    : "org.springframework.security:spring-security-config:$springSecurityVersion",
             securityTaglibs   : "org.springframework.security:spring-security-taglibs:$springSecurityVersion",
             rabbit            : "org.springframework.amqp:spring-rabbit:$springAmqpVersion",
@@ -164,6 +164,7 @@ ext {
     react = [
             projReactorIpc: "io.projectreactor.ipc:reactor-netty:0.7.0.M1",
             tomcatEmbedded: "org.apache.tomcat.embed:tomcat-embed-core:9.0.0.M25",
+            rx2: "com.github.davidmoten:rxjava2-jdbc:0.2.7"
     ]
 
     db = [

@@ -43,7 +43,7 @@
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
         </property>
-        <property name="packagesToScan" value="kz.cf.spring.lesson4"/>
+        <property name="packagesToScan" value="kz.cf.spring5.lesson4"/>
         <property name="jpaProperties">
             <props>
                 <prop key="hibernate.transaction.factory_class">
@@ -86,5 +86,5 @@
         <property name="userTransaction" ref="atomikosUserTransaction"/>
     </bean>
 
-    <context:component-scan base-package="kz.cf.spring.lesson4 " />
+    <context:component-scan base-package="kz.cf.spring5.lesson4 " />
 </beans> 

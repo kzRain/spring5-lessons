@@ -1,8 +1,8 @@
-package kz.cf.spring.lesson_5.config;
+package kz.cf.spring5.lesson_5.config;
 
-import kz.cf.spring.lesson4.entities.Album;
-import kz.cf.spring.lesson4.entities.Singer;
-import kz.cf.spring.lesson4.repos.SingerRepository;
+import kz.cf.spring5.lesson4.entities.Album;
+import kz.cf.spring5.lesson4.entities.Singer;
+import kz.cf.spring5.lesson4.repos.SingerRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

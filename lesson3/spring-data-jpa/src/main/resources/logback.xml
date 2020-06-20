@@ -11,7 +11,7 @@
         </encoder>
     </appender>
 
-    <logger name="kz.cf.spring.lesson4" level="debug"/>
+    <logger name="kz.cf.spring5.lesson4" level="debug"/>
 
     <logger name="org.springframework" level="off"/>
 

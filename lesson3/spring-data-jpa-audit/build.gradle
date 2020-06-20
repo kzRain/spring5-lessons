@@ -7,7 +7,7 @@ jar {
 	manifest {
 		attributes("Updated-By"      : "Ruslan Beyganov",
 				"Specification-Title": "Pro Spring 5",
-				"Main-Class"         : "kz.cf.spring.lesson4.SpringAuditJPADemo",
+				"Main-Class"         : "kz.cf.spring5.lesson4.SpringAuditJPADemo",
 				"Class-Path"         : configurations.compile.collect { it.getName() }.join(' '))
 	}
 }

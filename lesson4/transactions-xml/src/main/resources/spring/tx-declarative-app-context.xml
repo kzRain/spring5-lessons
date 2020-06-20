@@ -14,11 +14,11 @@
         http://www.springframework.org/schema/aop 
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean name="dataJpaConfig" class="kz.cf.spring.lesson4.config.DataJpaConfig" />
+    <bean name="dataJpaConfig" class="kz.cf.spring5.lesson4.config.DataJpaConfig" />
 
     <aop:config>
         <aop:pointcut id="serviceOperation" expression=
-                "execution(* kz.cf.spring.lesson4.*ServiceImpl.*(..))"/>
+                "execution(* kz.cf.spring5.lesson4.*ServiceImpl.*(..))"/>
         <aop:advisor pointcut-ref="serviceOperation" advice-ref="txAdvice"/>
     </aop:config>
 
@@ -35,6 +35,6 @@
     </bean>
 
     <context:component-scan
-            base-package="kz.cf.spring.lesson4" />
+            base-package="kz.cf.spring5.lesson4" />
 
 </beans>

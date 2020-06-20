@@ -1,8 +1,8 @@
-package kz.cf.spring.lesson_5;
+package kz.cf.spring5.lesson_5;
 
-import kz.cf.spring.lesson4.config.DataJpaConfig;
-import kz.cf.spring.lesson_5.config.ServicesConfig;
-import kz.cf.spring.lesson_5.services.SingerService;
+import kz.cf.spring5.lesson4.config.DataJpaConfig;
+import kz.cf.spring5.lesson_5.config.ServicesConfig;
+import kz.cf.spring5.lesson_5.services.SingerService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericApplicationContext;
 

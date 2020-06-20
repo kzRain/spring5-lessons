@@ -1,5 +1,5 @@
 subprojects {
-    group 'kz.cf.spring5.lesson4'
+    group 'kz.cf.spring5.'
     apply plugin: 'java'
 
     /*Task that copies all the dependencies under build/libs */

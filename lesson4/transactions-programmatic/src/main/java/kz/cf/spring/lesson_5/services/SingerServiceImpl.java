@@ -1,7 +1,7 @@
-package kz.cf.spring.lesson_5.services;
+package kz.cf.spring5.lesson_5.services;
 
-import kz.cf.spring.lesson4.entities.Singer;
-import kz.cf.spring.lesson4.repos.SingerRepository;
+import kz.cf.spring5.lesson4.entities.Singer;
+import kz.cf.spring5.lesson4.repos.SingerRepository;
 import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

@@ -30,7 +30,7 @@
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
         </property>
-        <property name="packagesToScan" value="kz.cf.spring.lesson4.entities"/>
+        <property name="packagesToScan" value="kz.cf.spring5.lesson4.entities"/>
         <property name="jpaProperties">
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>
@@ -42,5 +42,5 @@
         </property>
     </bean>
 
-    <context:component-scan base-package="kz.cf.spring.lesson4.service" />
+    <context:component-scan base-package="kz.cf.spring5.lesson4.service" />
 </beans>
