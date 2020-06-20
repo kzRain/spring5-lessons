@@ -2,7 +2,11 @@ package com.codeforce.product.model;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
+/*Alimbetov Ruslan*/
 @Entity(name = "pack")
 public class Pack {
 
@@ -10,8 +14,12 @@ public class Pack {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @NotNull(message = "weigth is requaired")
+    @DecimalMax(value="100", message = "weigth between 1 and 100 kg")
     private double weigth;
 
+    @NotNull(message = "packkey is requaired")
+    @Size(min=10, max =20, message = "packkey between 10 and 20 char")
     @Column( length = 20, nullable = false, unique = true)
     private String  packkey;
 

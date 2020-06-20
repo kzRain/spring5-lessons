@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title th:text="${add} ? 'Create a Container' : 'Edit a Container'" />
+</head>
+<body>
+<h1 th:text="${add} ? 'Create a Container:' : 'Edit a Container:'" />
+<a th:href="@{/containers/list}">Back to Containers List</a>
+<br/><br/>
+<form th:action="${add} ? @{/containers/add} : @{/containers/{containerid}/edit(containerid=${m_container.id})}"
+      th:object="${m_container}" method="POST">
+    <table border="1" style="width:50%">
+
+        <tr th:if="${m_container.id}">
+            <td>ID</td>
+            <td th:utext="${m_container.id}">...</td>
+        </tr>
+    <tr>
+    <td>Contry :</td>
+    <td> <select th:field="*{country}">
+            <option th:each="countryName : ${allCountry}"
+                    th:value="${countryName}"
+                    th:text="${countryName}">Contry</option>
+        </select>
+    <div   th:if="${#fields.hasErrors('country')}" th:errors="*{country}"/>
+    </td>
+    </tr>
+    <tr > <td>City : </td>
+    <td ><input type="text" size="100" height="40" th:field="*{city}" />
+    <div   th:if="${#fields.hasErrors('city')}" th:errors="*{city}"/>
+    </tr>
+    <tr > <td>Adress </td>
+    <td ><input type="text" size="100" height="40" th:field="*{adress}" />
+    <div   th:if="${#fields.hasErrors('adress')}" th:errors="*{adress}"/>
+    </tr>
+        <tr > <td> Qnumber </td>
+            <td ><input type="text" size="100" height="40" th:field="*{qnumber}" />
+                <div   th:if="${#fields.hasErrors('qnumber')}" th:errors="*{qnumber}"/>
+        </tr>
+
+
+    </table>
+
+    <input type="submit" th:value="${add} ? 'Create' : 'Update'" />
+</form>
+
+<br/>
+
+<div th:if="${errorMessage}" th:utext="${errorMessage}" class="error" />
+</body>
+</html>

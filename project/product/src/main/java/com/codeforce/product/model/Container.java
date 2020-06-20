@@ -1,7 +1,11 @@
 package com.codeforce.product.model;
 
 import javax.persistence.*;
-import java.util.List;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+import java.util.HashSet;
+import java.util.Set;
+/*Alimbetov Ruslan*/
 
 @Entity(name = "container")
 public class Container {
@@ -9,13 +13,27 @@ public class Container {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-   private String country;
+    @NotNull(message = "Country is requaired")
+    @Size(min=1, max =100, message = "Size between 1 and 100 char")
+    private String country;
 
-    @Column( length = 250, nullable = false, unique = true)
+    @NotNull(message = "city is requaired")
+    @Size(min=1, max =100, message = "Size between 1 and 100 char")
+    private String city;
+
+    @NotNull(message = "adress is requaired")
+    @Size(min=10, max =250, message = "Size between 10 and 100 char")
+    @Column( length = 250, nullable = false)
     private String adress;
 
-    @OneToMany
-    private List<Pack> packs;
+    @NotNull(message = "qnumber is requaired")
+    @Size(min=10, max =100, message = "Size between 10 and 100 char")
+    @Column( name="qnumber", length = 100, nullable = false, unique = true)
+    private String qnumber;
+
+
+    @OneToMany (mappedBy = "container")
+    private Set<Pack> packs = new HashSet<>();
 
     public Container() {
     }
@@ -44,13 +62,27 @@ public class Container {
         this.adress = adress;
     }
 
-    public List<Pack> getPacks() {
+    public Set<Pack> getPacks() {
         return packs;
     }
 
-    public void setPacks(List<Pack> packs) {
+    public void setPacks(Set<Pack> packs) {
         this.packs = packs;
     }
 
+    public String getCity() {
+        return city;
+    }
 
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getQnumber() {
+        return qnumber;
+    }
+
+    public void setQnumber(String qnumber) {
+        this.qnumber = qnumber;
+    }
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>View Container</title>
+
+</head>
+<body>
+<h1>View Container</h1>
+<a th:href="@{/containers/list}">Back to Containers List</a>
+<br/><br/>
+
+<table border="0">
+    <tr th:if="${m_container.id}">
+        <td>ID</td>
+        <td>:</td>
+        <td th:utext="${m_container.id}">...</td>
+    </tr>
+    <tr>
+        <td>Container :</td>
+        <td><input type="text" th:field="${m_container.country}" /></td>
+        <td><input type="text" th:field="${m_container.city}" /></td>
+        <td><input type="text" th:field="${m_container.adress}" /></td>
+        <td><input type="text" th:field="${m_container.qnumber}" /></td>
+    </tr>
+
+</table>
+
+    <br/><br/>
+    <div th:if="not ${allowDelete}">
+        <a th:href="@{/containers/{containerid}/edit(containerid=${m_container.id})}">Edit</a> |
+        <a th:href="@{/containers/{containerid}/delete(containerid=${m_container.id})}">Delete</a>
+    </div>
+    <form th:if="${allowDelete}" th:action="@{/containers/{containerid}/delete(containerid=${m_container.id})}" method="POST">
+        Delete this containers? <input type="submit" th:value="Yes" />
+    </form>
+</div>
+<div th:if="${errorMessage}" th:utext="${errorMessage}" class="error" />
+</body>
+</html>

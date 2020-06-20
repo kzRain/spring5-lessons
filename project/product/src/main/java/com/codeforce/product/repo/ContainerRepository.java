@@ -1,18 +1,23 @@
 package com.codeforce.product.repo;
 
 import com.codeforce.product.model.Container;
+import com.codeforce.product.model.State;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
+import java.util.List;
 
+/*Alimbetov Ruslan*/
 @Repository
-public interface ContainerRepository extends CrudRepository<Container, Long> {
+public interface ContainerRepository  extends PagingAndSortingRepository<Container, Long>, JpaSpecificationExecutor<State> {
 
-    /*
-    List<Container> findByCountry(String title);
+     List<Container>   findContainerByCountry(String country);
 
-    List<Container> findByAdress(String adress);
+     List<Container> findContainersByCityContaining(String city);
 
-    List<Container> findByAdressContainingIgnoreCase(String adress);
-*/
+     List<Container> findContainersByAdressContaining(String adress);
+
+
 
 }
