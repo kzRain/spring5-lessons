@@ -68,7 +68,7 @@ public class XAJpaConfig {
 	@Bean
 	public Properties xaBProperties() {
 		Properties xaProp = new Properties();
-		xaProp.put("databaseName", "task");
+		xaProp.put("databaseName", "taska");
 		xaProp.put("user", "task");
 		xaProp.put("password", "task");
 		return xaProp;

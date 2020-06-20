@@ -34,7 +34,20 @@ include 'lesson4:transactions-annotation'
 include 'lesson4:boot-jta'
 
 
-
+//include 'lesson8'
+//include 'lesson8:base-remote'
+//include 'lesson8:spring-invoker'
+//include 'lesson8:rest'
+//include 'lesson8:jms-artemis'
+//include 'lesson8:jms-hornetq'
+//include 'lesson8:boot-jms'
+//include 'lesson8:boot-rest'
+//include 'lesson8:secure-rest'
+//include 'lesson8:amqp-rpc'
+//include 'lesson8:boot-amqp'
+//include 'lesson8:webflux-boot'
+//include 'lesson8:webflux-boot2'
+//include 'lesson8:webflux'
 
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
 		'"Spring Pro, Fifth Edition" ' +
