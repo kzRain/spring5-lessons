@@ -15,7 +15,7 @@ import javax.persistence.EntityManagerFactory;
  * Created  on 5/17/17.
  */
 @Configuration
-@ComponentScan(basePackages = "kz.cf.spring5.lesson_5")
+@ComponentScan(basePackages = "kz.cf.spring5.lesson4")
 public class ServicesConfig {
 
 	@Autowired EntityManagerFactory entityManagerFactory;
