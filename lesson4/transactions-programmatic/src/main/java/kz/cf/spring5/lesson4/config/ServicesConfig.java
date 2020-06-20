@@ -1,4 +1,4 @@
-package kz.cf.spring5.lesson_5.config;
+package kz.cf.spring5.lesson4.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

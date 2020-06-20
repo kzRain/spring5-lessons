@@ -1,4 +1,4 @@
-package kz.cf.spring5.lesson_5.services;
+package kz.cf.spring5.lesson4.services;
 
 import kz.cf.spring5.lesson4.entities.Singer;
 import kz.cf.spring5.lesson4.repos.SingerRepository;

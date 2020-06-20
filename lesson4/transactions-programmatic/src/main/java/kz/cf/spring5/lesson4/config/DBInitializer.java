@@ -1,4 +1,4 @@
-package kz.cf.spring5.lesson_5.config;
+package kz.cf.spring5.lesson4.config;
 
 import kz.cf.spring5.lesson4.entities.Album;
 import kz.cf.spring5.lesson4.entities.Singer;
