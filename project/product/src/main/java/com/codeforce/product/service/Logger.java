@@ -1,28 +1,26 @@
-package com.example.demo.model;
+package com.codeforce.product.service;
 
-import com.example.demo.entity.LogsDB;
-import com.example.demo.repo.LogsDBRepo;
+import com.codeforce.product.model.LogsDB;
+import com.codeforce.product.repo.LogsDBRepo;
 import org.springframework.stereotype.Service;
 
-import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class Logger {
 
     private final LogsDBRepo logsDBRepo;
 
-    private static Long count = 0L;
-
     public Logger(LogsDBRepo logsDBRepo) {
         this.logsDBRepo = logsDBRepo;
     }
 
     public Long getCount() {
-        return count;
+        return logsDBRepo.count();
     }
 
 
@@ -37,10 +35,8 @@ public class Logger {
 
         System.out.println(logMessage);
         LogsDB logsDB = new LogsDB();
-        logsDB.setId(null);
         logsDB.setLog(logMessage);
         logsDBRepo.save(logsDB);
-        count++;
     }
 
     public List<String> getExactClassLogs (Class clazz) {
@@ -55,5 +51,18 @@ public class Logger {
         return logs;
     }
 
+    public List<LogsDB> getAllLogs() {
+        return logsDBRepo.findAll();
+    }
 
+    public LogsDB getLogById(Long id) {
+        Optional<LogsDB> log = logsDBRepo.findById(id);
+        if (log.isPresent()) {
+            return log.get();
+        }
+        else {
+            System.out.println("Log by ID not found");
+            return null;
+        }
+    }
 }

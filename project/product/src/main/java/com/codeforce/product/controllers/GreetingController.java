@@ -3,7 +3,7 @@ package com.codeforce.product.controllers;
 import com.codeforce.product.model.UserImages;
 import com.codeforce.product.repo.UserImagesRepository;
 
-import com.sun.xml.internal.messaging.saaj.util.Base64;
+//import com.sun.xml.internal.messaging.saaj.util.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -31,19 +31,19 @@ UserImagesRepository userImagesRepository;
         return "uploadFile";
     }
 
-    @GetMapping("/uploadStatus")
-    public String uploadStatus(Model model) throws UnsupportedEncodingException {
-
-        Optional<UserImages> img= userImagesRepository.findById(21L);
-
-        byte[] encodeBase64 = Base64.encode(img.get().getPicByte());
-        String base64Encoded = new String(encodeBase64, "UTF-8");
-        model.addAttribute("userImage", base64Encoded );
-
-        /*model.addAttribute("my_img", img.get());*/
-
-        return "uploadStatus";
-    }
+//    @GetMapping("/uploadStatus")
+//    public String uploadStatus(Model model) throws UnsupportedEncodingException {
+//
+//        Optional<UserImages> img= userImagesRepository.findById(21L);
+//
+//        byte[] encodeBase64 = Base64.encode(img.get().getPicByte());
+//        String base64Encoded = new String(encodeBase64, "UTF-8");
+//        model.addAttribute("userImage", base64Encoded );
+//
+//        /*model.addAttribute("my_img", img.get());*/
+//
+//        return "uploadStatus";
+//    }
 
 
     @PostMapping("/upload") // //new annotation since 4.3

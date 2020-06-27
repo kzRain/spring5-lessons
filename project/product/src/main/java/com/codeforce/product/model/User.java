@@ -2,9 +2,8 @@ package com.codeforce.product.model;
 
 import javax.persistence.*;
 
-@Entity(name = "system-user")
+@Entity(name = "system_user")
 public class User {
-    private Role role;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -13,6 +12,9 @@ public class User {
 
     @ManyToOne
     @JoinColumn(name = "ROLE_ID")
+    private Role role;
+
+
     public Role getRole(){
         return this.role;
     }
