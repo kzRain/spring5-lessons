@@ -7,7 +7,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /*Alimbetov Ruslan*/
-@Entity(name = "pack")
+@Entity
+@Table(name = "pack")
 public class Pack {
 
     @Id

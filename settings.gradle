@@ -1,8 +1,8 @@
 rootProject.name = 'pro-spring-5'
 
-include 'project:product'
-include 'project:service'
-include 'project:point'
+//include 'project:product'
+//include 'project:service'
+//include 'project:point'
 
 include 'lesson1:hello-world'
 include 'lesson1:schedule-demo'

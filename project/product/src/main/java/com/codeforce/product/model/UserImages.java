@@ -3,7 +3,8 @@ package com.codeforce.product.model;
 
 import javax.persistence.*;
 
-@Entity(name = "user_images")
+@Entity
+@Table(name = "user_images")
 public class UserImages {
 
     @Id

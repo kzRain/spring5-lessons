@@ -2,7 +2,8 @@ package com.codeforce.product.model;
 
 import javax.persistence.*;
 
-@Entity(name = "system_user")
+@Entity
+@Table(name = "system_user")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

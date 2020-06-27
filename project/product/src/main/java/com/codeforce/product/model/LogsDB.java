@@ -6,9 +6,10 @@ import java.util.Objects;
 
 
 @Entity
+@Table(name = "logs_db")
 public class LogsDB {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(name = "LOG_COLUMN")
     private String log;

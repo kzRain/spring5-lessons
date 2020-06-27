@@ -7,7 +7,8 @@ import java.util.HashSet;
 import java.util.Set;
 /*Alimbetov Ruslan*/
 
-@Entity(name = "container")
+@Entity
+@Table(name = "container")
 public class Container {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

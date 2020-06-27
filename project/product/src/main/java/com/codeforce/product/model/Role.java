@@ -2,7 +2,8 @@ package com.codeforce.product.model;
 
 import javax.persistence.*;
 
-@Entity(name = "system_role")
+@Entity
+@Table(name = "system_role")
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

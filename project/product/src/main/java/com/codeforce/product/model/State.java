@@ -6,10 +6,12 @@ import javax.validation.constraints.Size;
 import java.util.HashSet;
 import java.util.Set;
 /*Alimbetov Ruslan*/
-@Entity(name = "state")
+@Entity
+@Table(name = "state")
 public class State {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @SequenceGenerator( name = "state_sequence", sequenceName = "state_sequence", allocationSize = 1, initialValue = 1 )
+    @GeneratedValue( strategy = GenerationType.SEQUENCE, generator = "state_sequence")
     private Long id;
 
     @NotNull(message = "state is requaired")
