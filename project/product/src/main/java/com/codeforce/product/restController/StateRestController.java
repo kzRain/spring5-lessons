@@ -37,6 +37,20 @@ public class StateRestController {
         return new ResponseEntity<State>(updated, new HttpHeaders(), HttpStatus.OK);
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<State> updateStates(@PathVariable Long id, @RequestBody State state) {
+        State find = stateService.getStateById(id);
+        State result = null;
+        if (find != null) {
+            find.setState(state.getState());
+            find.setDescription(state.getDescription());
+            result = stateService.createOrUpdateState(find);
+        } else {
+            result = state;
+        }
+        return new ResponseEntity<State>(result, new HttpHeaders(), HttpStatus.OK);
+    }
+
     @DeleteMapping("/{id}")
     public HttpStatus deleteStateById(@PathVariable("id") Long id) {
         stateService.deleteStateById(id);

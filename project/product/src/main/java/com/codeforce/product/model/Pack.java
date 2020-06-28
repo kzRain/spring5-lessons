@@ -1,6 +1,8 @@
 package com.codeforce.product.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.NotNull;
@@ -16,15 +18,15 @@ public class Pack {
     private Long id;
 
     @NotNull(message = "weigth is requaired")
-    @DecimalMax(value="100", message = "weigth between 1 and 100 kg")
+    @DecimalMax(value = "100", message = "weigth between 1 and 100 kg")
     private double weigth;
 
     @NotNull(message = "packkey is requaired")
-    @Size(min=10, max =20, message = "packkey between 10 and 20 char")
-    @Column( length = 20, nullable = false, unique = true)
-    private String  packkey;
+    @Size(min = 10, max = 20, message = "packkey between 10 and 20 char")
+    @Column(length = 20, nullable = false, unique = true)
+    private String packkey;
 
-
+    @JsonIgnore
     @ManyToOne
     private State state;
 
