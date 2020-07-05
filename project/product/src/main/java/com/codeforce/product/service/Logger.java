@@ -2,6 +2,7 @@ package com.codeforce.product.service;
 
 import com.codeforce.product.model.LogsDB;
 import com.codeforce.product.repo.LogsDBRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
@@ -13,16 +14,12 @@ import java.util.Optional;
 @Service
 public class Logger {
 
-    private final LogsDBRepo logsDBRepo;
-
-    public Logger(LogsDBRepo logsDBRepo) {
-        this.logsDBRepo = logsDBRepo;
-    }
+    @Autowired
+    private LogsDBRepo logsDBRepo;
 
     public Long getCount() {
         return logsDBRepo.count();
     }
-
 
     public void writeLog(String log) {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");

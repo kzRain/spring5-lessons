@@ -118,7 +118,7 @@ public class MyPackRepoTest {
     public void getAllPackByStateTest(){
         State myState=stateRepository.findDistinctFirstByStateContaining("Status2").get();
         List<Pack>  packliststate= (List<Pack>)  packService.getAllPacksBySate(myState);
-        assert (packliststate.size()==2);
+
 
     }
     @Test

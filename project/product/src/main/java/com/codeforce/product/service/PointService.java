@@ -1,15 +1,40 @@
 package com.codeforce.product.service;
 
-
 import com.codeforce.product.model.Point;
+import com.codeforce.product.repo.PointRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
-interface PointService {
-    ArrayList<Point> getAllFree();
+@Service
+public class PointService {
+    
+   @Autowired
+   PointRepository pointRepository;
 
-    void addBoxToPoint(Point point, int i);
+    public ArrayList<Point> getAllFree() {
+        return pointRepository.findAllFree();
+    }
 
-    boolean check_token_exists(Point point);
+
+
+    public void addBoxToPoint(Point point, int i) {
+        Point point_1 = pointRepository.findById(point.getId()).get();
+        if(point_1.getBoxNum() >= point_1.getBusy() + i){
+            point_1.setBusy(point_1.getBusy() + i);
+        }
+        pointRepository.save(point_1);
+    }
+
+
+    public boolean check_token_exists(Point point) {
+        ArrayList<Point> list = (ArrayList<Point>) pointRepository.findAll();
+        for(int i = 0; i < list.size(); i++){
+            if(list.get(i).getToken().equals(point.getToken())){
+                return true;
+            }
+        }
+        return false;
+    }
 }
-
