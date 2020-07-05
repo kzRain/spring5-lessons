@@ -9,8 +9,8 @@ import java.util.stream.Collectors;
 import static com.codeforce.product.security.UserPermission.*;
 
 public enum UserRole {
-    ADMIN(Sets.newHashSet(ADMIN_READ, ADMIN_WRITE, USER_READ, USER_WRITE)),
-    MANAGER(Sets.newHashSet(ADMIN_READ, USER_READ)),
+    ADMIN(Sets.newHashSet(STATE_READ, STATE_WRITE, PACK_READ, PACK_WRITE)),
+    MANAGER(Sets.newHashSet(STATE_READ, PACK_READ)),
     USER(Sets.newHashSet());
 
     private final Set<UserPermission> permissions;

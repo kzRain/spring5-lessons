@@ -26,9 +26,14 @@ public class GreetingController {
 UserImagesRepository userImagesRepository;
 
 
-    @GetMapping("/")
+//    @GetMapping("/")
+//    public String index() {
+//        return "uploadFile";
+//    }
+
+    @GetMapping("/greeting")
     public String index() {
-        return "uploadFile";
+        return "greeting";
     }
 
 //    @GetMapping("/uploadStatus")
