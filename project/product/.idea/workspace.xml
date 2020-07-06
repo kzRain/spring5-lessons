@@ -19,25 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74deebf4-9f32-4685-83f7-a384f6112de5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../lesson5/rest/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lesson5/secure-rest/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lesson5/spring-invoker/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lesson5/webflux/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/codeforce/product/service/ProjectLoggerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../transaction-logs/tmlog0.log" afterDir="false" />
+    <list default="true" id="74deebf4-9f32-4685-83f7-a384f6112de5" name="Default Changelist" comment="added tests for logger">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/BoxRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/BoxService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/config/Dbunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/config/Dbunit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Pack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Pack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/PackRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/PackRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PackService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PointService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PointService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PointServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/codeforce/product/service/MyPackRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/codeforce/product/service/MyPackRepoTest.java" afterDir="false" />
     </list>
@@ -50,6 +45,24 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -84,7 +97,45 @@
       <recent name="com.codeforce.product.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductApplication">
+  <component name="RunManager" selected="Gradle.MyPackRepoTest.StateRepoSaveTest">
+    <configuration name="BoxAndPointsTest.BoxAndPoints" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.codeforce.product.service.BoxAndPointsTest.BoxAndPoints&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MyPackRepoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.codeforce.product.service.MyPackRepoTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="MyPackRepoTest.StateRepoSaveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,12 +155,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MyPackRepoTest.getAllPackByStateTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MyPackRepoTest.pointInit" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.codeforce.product.service.MyPackRepoTest.getAllPackByStateTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.codeforce.product.service.MyPackRepoTest.pointInit&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -151,9 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ProjectLoggerApplicationTests" />
-        <item itemvalue="Gradle.MyPackRepoTest.getAllPackByStateTest" />
         <item itemvalue="Gradle.MyPackRepoTest.StateRepoSaveTest" />
+        <item itemvalue="Gradle.MyPackRepoTest" />
+        <item itemvalue="Gradle.ProjectLoggerApplicationTests" />
+        <item itemvalue="Gradle.BoxAndPointsTest.BoxAndPoints" />
+        <item itemvalue="Gradle.MyPackRepoTest.pointInit" />
       </list>
     </recent_temporary>
   </component>
@@ -167,8 +220,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593838484469</updated>
-      <workItem from="1593838487453" duration="6580000" />
+      <workItem from="1593838487453" duration="7164000" />
+      <workItem from="1593961572794" duration="23056000" />
     </task>
+    <task id="LOCAL-00001" summary="added tests for logger">
+      <created>1593961203777</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593961203777</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,63 +246,92 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added tests for logger" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests for logger" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593929443068">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1593929443068" />
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1594049770690">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1594049770690" />
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593958334642">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1593958334642" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1593960570540">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1594052083240">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593960570540" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1593960570538">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594052083240" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1594052083239">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593960570538" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1593960570538">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594052083239" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1594052083238">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593960570538" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1593960570539">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594052083238" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1594052083239">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593960570539" />
-    <state width="1398" height="245" key="GridCell.Tab.1.bottom" timestamp="1593960570541">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594052083239" />
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom" timestamp="1594051496446">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593960570541" />
-    <state width="1398" height="245" key="GridCell.Tab.1.center" timestamp="1593960570540">
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594051496446" />
+    <state width="1398" height="245" key="GridCell.Tab.1.center" timestamp="1594051496445">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1593960570540" />
-    <state width="1398" height="245" key="GridCell.Tab.1.left" timestamp="1593960570540">
+    <state width="1398" height="245" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1594051496445" />
+    <state width="1398" height="245" key="GridCell.Tab.1.left" timestamp="1594051496444">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1593960570540" />
-    <state width="1398" height="245" key="GridCell.Tab.1.right" timestamp="1593960570541">
+    <state width="1398" height="245" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1594051496444" />
+    <state width="1398" height="245" key="GridCell.Tab.1.right" timestamp="1594051496445">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1593960570541" />
+    <state width="1398" height="245" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1594051496445" />
+    <state width="1398" height="304" key="GridCell.Tab.2.bottom" timestamp="1594045544726">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594045544726" />
+    <state width="1398" height="304" key="GridCell.Tab.2.center" timestamp="1594045544725">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1594045544725" />
+    <state width="1398" height="304" key="GridCell.Tab.2.left" timestamp="1594045544724">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1594045544724" />
+    <state width="1398" height="304" key="GridCell.Tab.2.right" timestamp="1594045544725">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1594045544725" />
     <state x="308" y="200" key="IDE.errors.dialog" timestamp="1593958393992">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="308" y="200" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1593958393992" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1593960783398">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1593961493030">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593960783398" />
-    <state x="598" y="197" width="346" height="505" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1593929490382">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593961493030" />
+    <state x="598" y="197" width="346" height="505" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1594052039619">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="598" y="197" width="346" height="505" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1440.900@0.0.1440.900" timestamp="1593929490382" />
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593934211499">
+    <state x="598" y="197" width="346" height="505" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1440.900@0.0.1440.900" timestamp="1594052039619" />
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593961581856">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1593934211499" />
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1593961581856" />
+    <state x="403" y="245" key="git4idea.merge.GitPullDialog" timestamp="1593961254939">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="403" y="245" key="git4idea.merge.GitPullDialog/0.0.1440.900@0.0.1440.900" timestamp="1593961254939" />
   </component>
 </project>

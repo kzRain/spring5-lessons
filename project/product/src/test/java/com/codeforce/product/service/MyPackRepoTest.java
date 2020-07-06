@@ -104,7 +104,7 @@ public class MyPackRepoTest {
         Pack myPack = new Pack();
         myPack.setId(0L);
         myPack.setWeigth(300D);
-        myPack.setPackkey("ABCD03");
+        myPack.setPackKey("ABCD03");
         myPack.setState(myState);
         myPack.setContainer(myContayner);
         packService.createOrUpdatePack(myPack);
@@ -141,7 +141,7 @@ public class MyPackRepoTest {
        assert (my_packsL.size()==1);
 
        Pack myPack_key=packService.getPackByKey("ABCD03");
-       assert (myPack_key.getPackkey().equals("ABCD03"));
+       assert (myPack_key.getPackKey().equals("ABCD03"));
 
    }
 
