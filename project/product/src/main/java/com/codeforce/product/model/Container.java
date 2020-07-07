@@ -4,6 +4,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 /*Alimbetov Ruslan*/
 
@@ -32,9 +33,11 @@ public class Container {
     @Column( name="qnumber", length = 100, nullable = false, unique = true)
     private String qnumber;
 
-
-    @OneToMany (mappedBy = "container")
+    @OneToMany (cascade = CascadeType.ALL)
     private Set<Pack> packs = new HashSet<>();
+
+    @OneToMany (cascade = CascadeType.ALL)
+    private Set<Point> points = new HashSet<>();
 
     public Container() {
     }
@@ -71,6 +74,10 @@ public class Container {
         this.packs = packs;
     }
 
+    public void addPack(Pack pack) {
+        packs.add(pack);
+    }
+
     public String getCity() {
         return city;
     }
@@ -85,5 +92,50 @@ public class Container {
 
     public void setQnumber(String qnumber) {
         this.qnumber = qnumber;
+    }
+
+    public Set<Point> getPoints() {
+        return points;
+    }
+
+    public void setPoints(Set<Point> points) {
+        this.points = points;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Container)) return false;
+
+        Container container = (Container) o;
+
+        if (id != container.id) return false;
+        if (country != null ? !country.equals(container.country) : container.country != null) return false;
+        if (city != null ? !city.equals(container.city) : container.city != null) return false;
+        if (adress != null ? !adress.equals(container.adress) : container.adress != null) return false;
+        return qnumber != null ? qnumber.equals(container.qnumber) : container.qnumber == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (int) (id ^ (id >>> 32));
+        result = 31 * result + (country != null ? country.hashCode() : 0);
+        result = 31 * result + (city != null ? city.hashCode() : 0);
+        result = 31 * result + (adress != null ? adress.hashCode() : 0);
+        result = 31 * result + (qnumber != null ? qnumber.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Container{" +
+                "id=" + id +
+                ", country='" + country + '\'' +
+                ", city='" + city + '\'' +
+                ", adress='" + adress + '\'' +
+                ", qnumber='" + qnumber + '\'' +
+                ", packs=" + packs +
+                ", points=" + points +
+                '}';
     }
 }

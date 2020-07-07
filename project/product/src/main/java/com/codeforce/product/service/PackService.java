@@ -58,7 +58,7 @@ public class PackService {
         return null;
     }
     public Pack getPackByKey(String key) {
-        Optional<Pack> pack = packRepository.findPackByPackkey(key);
+        Optional<Pack> pack = packRepository.findPackByPackKey(key);
         if(pack.isPresent()) {
             return pack.get();
         }
@@ -91,7 +91,7 @@ public class PackService {
         {
             Pack newEntity = mypack.get();
             newEntity.setState(entity.getState());
-            newEntity.setPackkey(entity.getPackkey());
+            newEntity.setPackKey(entity.getPackKey());
             newEntity.setWeigth(entity.getWeigth());
             newEntity.setContainer(entity.getContainer());
 
@@ -130,7 +130,7 @@ public class PackService {
     }
 
     public  Pack save(Pack pack)  {
-        if (!StringUtils.isEmpty(pack.getPackkey())) {
+        if (!StringUtils.isEmpty(pack.getPackKey())) {
             if (existsById(pack.getId())) {
                 System.out.println ("State with id: " + pack.getId() + " already exists");
             }
@@ -144,7 +144,7 @@ public class PackService {
     }
 
     public void  update(Pack pack) {
-        if (!StringUtils.isEmpty(pack.getPackkey())) {
+        if (!StringUtils.isEmpty(pack.getPackKey())) {
             if (!existsById(pack.getId())) {
                 System.out.println("Cannot find Contact with id: " + pack.getId());
             }

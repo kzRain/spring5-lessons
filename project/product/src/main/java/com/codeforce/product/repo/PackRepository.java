@@ -22,7 +22,7 @@ public interface PackRepository extends PagingAndSortingRepository<Pack, Long>, 
 
     List<Pack> findAllByWeigthLessThanEqualAndState(Double weight, State mystate);
 
-    Optional<Pack> findPackByPackkey(String packkey);
+    Optional<Pack> findPackByPackKey(String packkey);
 
 
 
