@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/lesson1" />
+            <option value="$PROJECT_DIR$/lesson1/hello-world" />
+            <option value="$PROJECT_DIR$/lesson1/repo-h2" />
+            <option value="$PROJECT_DIR$/lesson1/schedule-demo" />
+            <option value="$PROJECT_DIR$/lesson2" />
+            <option value="$PROJECT_DIR$/lesson2/plain-jdbc" />
+            <option value="$PROJECT_DIR$/lesson2/spring-boot-jdbc" />
+            <option value="$PROJECT_DIR$/lesson2/spring-jdbc-annotations" />
+            <option value="$PROJECT_DIR$/lesson2/spring-jdbc-embedded" />
+            <option value="$PROJECT_DIR$/lesson2/spring-jdbc-namedparam" />
+            <option value="$PROJECT_DIR$/lesson2/spring-jdbc-resultsetextractor" />
+            <option value="$PROJECT_DIR$/lesson2/spring-jdbc-rowmapper" />
+            <option value="$PROJECT_DIR$/lesson3" />
+            <option value="$PROJECT_DIR$/lesson3/boot-jpa" />
+            <option value="$PROJECT_DIR$/lesson3/hibernate-base" />
+            <option value="$PROJECT_DIR$/lesson3/hibernate-crud" />
+            <option value="$PROJECT_DIR$/lesson3/hibernate-envers" />
+            <option value="$PROJECT_DIR$/lesson3/jpa-criteria" />
+            <option value="$PROJECT_DIR$/lesson3/jpa-crud" />
+            <option value="$PROJECT_DIR$/lesson3/spring-data-jpa" />
+            <option value="$PROJECT_DIR$/lesson3/spring-data-jpa-alt" />
+            <option value="$PROJECT_DIR$/lesson3/spring-data-jpa-audit" />
+            <option value="$PROJECT_DIR$/lesson4" />
+            <option value="$PROJECT_DIR$/lesson4/base-dao" />
+            <option value="$PROJECT_DIR$/lesson4/boot-jta" />
+            <option value="$PROJECT_DIR$/lesson4/transactions-annotation" />
+            <option value="$PROJECT_DIR$/lesson4/transactions-jta" />
+            <option value="$PROJECT_DIR$/lesson4/transactions-programmatic" />
+            <option value="$PROJECT_DIR$/lesson4/transactions-xml" />
+            <option value="$PROJECT_DIR$/lesson5" />
+            <option value="$PROJECT_DIR$/lesson5/amqp-rpc" />
+            <option value="$PROJECT_DIR$/lesson5/base-remote" />
+            <option value="$PROJECT_DIR$/lesson5/boot-amqp" />
+            <option value="$PROJECT_DIR$/lesson5/boot-jms" />
+            <option value="$PROJECT_DIR$/lesson5/boot-rest" />
+            <option value="$PROJECT_DIR$/lesson5/jms-artemis" />
+            <option value="$PROJECT_DIR$/lesson5/jms-hornetq" />
+            <option value="$PROJECT_DIR$/lesson5/rest" />
+            <option value="$PROJECT_DIR$/lesson5/secure-rest" />
+            <option value="$PROJECT_DIR$/lesson5/spring-invoker" />
+            <option value="$PROJECT_DIR$/lesson5/webflux" />
+            <option value="$PROJECT_DIR$/lesson5/webflux-boot" />
+            <option value="$PROJECT_DIR$/lesson5/webflux-boot2" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
