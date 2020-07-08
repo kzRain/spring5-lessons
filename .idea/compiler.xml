@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <annotationProcessing>
-      <profile name="Gradle Imported" enabled="true">
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-jpamodelgen/5.2.10.Final/a8966cb92fe18d96ef9988dac5a9359b3fdeea9e/hibernate-jpamodelgen-5.2.10.Final.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar" />
-        </processorPath>
-        <module name="pro-spring-5.lesson3.jpa-criteria.main" />
-      </profile>
-    </annotationProcessing>
     <bytecodeTargetLevel target="1.8" />
   </component>
 </project>

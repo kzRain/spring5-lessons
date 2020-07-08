@@ -73,7 +73,7 @@ public class ContainerControler {
                 return "container-edit";
             } else {
                 newContainer = containerService.save(container);
-                return "redirect:/containers/" + String.valueOf(newContainer.getId())+"//edit";
+                return "redirect:/containers/" + String.valueOf(newContainer.getId())+"/edit";
             }
 
 
