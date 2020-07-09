@@ -22,16 +22,20 @@ public class Pack {
     private double weigth;
 
     @NotNull(message = "packkey is requaired")
-    @Size(min = 10, max = 20, message = "packkey between 10 and 20 char")
-    @Column(length = 20, nullable = false, unique = true)
-    private String packkey;
+    private String packKey;
 
     @JsonIgnore
-    @ManyToOne
+    @ManyToOne (cascade = CascadeType.ALL)
     private State state;
 
     @ManyToOne
     private Container container;
+
+    @ManyToOne
+    private Point point;
+
+    @OneToOne
+    private Box box;
 
 
     public Pack() {
@@ -53,12 +57,12 @@ public class Pack {
         this.weigth = weigth;
     }
 
-    public String getPackkey() {
-        return packkey;
+    public String getPackKey() {
+        return packKey;
     }
 
-    public void setPackkey(String packkey) {
-        this.packkey = packkey;
+    public void setPackKey(String packKey) {
+        this.packKey = packKey;
     }
 
     public State getState() {
