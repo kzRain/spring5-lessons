@@ -38,16 +38,17 @@ include 'lesson5'
 include 'lesson5:base-remote'
 include 'lesson5:spring-invoker'
 include 'lesson5:rest'
-include 'lesson5:jms-artemis'
-include 'lesson5:jms-hornetq'
-include 'lesson5:boot-jms'
 include 'lesson5:boot-rest'
 include 'lesson5:secure-rest'
 include 'lesson5:amqp-rpc'
 include 'lesson5:boot-amqp'
-include 'lesson5:webflux-boot'
-include 'lesson5:webflux-boot2'
-include 'lesson5:webflux'
+
+include 'lesson6:jms-artemis'
+include 'lesson6:jms-hornetq'
+include 'lesson6:boot-jms'
+include 'lesson6:webflux-boot'
+include 'lesson6:webflux-boot2'
+include 'lesson6:webflux'
 
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
 		'"Spring Pro, Fifth Edition" ' +
