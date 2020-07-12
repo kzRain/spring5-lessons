@@ -22,7 +22,7 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public Flux<User> findAll() {
-        return Flux.from(db.select("SELECT id, first_name, last_name FROM users")
+        return Flux.from(db.select("SELECT id, first_name, last_name FROM users_system")
                 .get(rs -> toUser(rs)));
     }
 
@@ -41,7 +41,7 @@ public class UserRepositoryImpl implements UserRepository {
     @Override
     public Mono<Long> save(User user) {
         return Mono.from(db
-                .update("INSERT INTO users (first_name, last_name) VALUES (:firstname, :lastname)")
+                .update("INSERT INTO users_system (first_name, last_name) VALUES (:firstname, :lastname)")
                 .parameters(toParameters(user))
                 .returnGeneratedKeys()
                 .getAs(Long.class));

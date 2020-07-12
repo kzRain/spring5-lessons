@@ -3,16 +3,21 @@ package kz.cf.spring5.lesson5.domain;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users")
+@Table(name = "users_system")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String firstName;
     private String lastName;
 
     public User() {
+    }
+
+    public User(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public User(Long id, String firstName, String lastName) {
