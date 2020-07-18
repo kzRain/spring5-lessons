@@ -94,6 +94,7 @@ ext {
             springBootPlugin: "org.springframework.boot:spring-boot-gradle-plugin:$bootVersion",
             starter         : "org.springframework.boot:spring-boot-starter:$bootVersion",
             starterWeb      : "org.springframework.boot:spring-boot-starter-web:$bootVersion",
+            starterWS      : "org.springframework.boot:spring-boot-starter-web-service:$bootVersion",
             actuator        : "org.springframework.boot:spring-boot-starter-actuator:$bootVersion",
             starterTest     : "org.springframework.boot:spring-boot-starter-test:$bootVersion",
             starterAop      : "org.springframework.boot:spring-boot-starter-aop:$bootVersion",
