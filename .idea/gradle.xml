@@ -43,16 +43,17 @@
             <option value="$PROJECT_DIR$/lesson5/amqp-rpc" />
             <option value="$PROJECT_DIR$/lesson5/base-remote" />
             <option value="$PROJECT_DIR$/lesson5/boot-amqp" />
-            <option value="$PROJECT_DIR$/lesson5/boot-jms" />
             <option value="$PROJECT_DIR$/lesson5/boot-rest" />
-            <option value="$PROJECT_DIR$/lesson5/jms-artemis" />
-            <option value="$PROJECT_DIR$/lesson5/jms-hornetq" />
             <option value="$PROJECT_DIR$/lesson5/rest" />
             <option value="$PROJECT_DIR$/lesson5/secure-rest" />
             <option value="$PROJECT_DIR$/lesson5/spring-invoker" />
-            <option value="$PROJECT_DIR$/lesson5/webflux" />
-            <option value="$PROJECT_DIR$/lesson5/webflux-boot" />
-            <option value="$PROJECT_DIR$/lesson5/webflux-boot2" />
+            <option value="$PROJECT_DIR$/lesson6" />
+            <option value="$PROJECT_DIR$/lesson6/boot-jms" />
+            <option value="$PROJECT_DIR$/lesson6/jms-artemis" />
+            <option value="$PROJECT_DIR$/lesson6/jms-hornetq" />
+            <option value="$PROJECT_DIR$/lesson6/webflux" />
+            <option value="$PROJECT_DIR$/lesson6/webflux-boot" />
+            <option value="$PROJECT_DIR$/lesson6/webflux-boot2" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />

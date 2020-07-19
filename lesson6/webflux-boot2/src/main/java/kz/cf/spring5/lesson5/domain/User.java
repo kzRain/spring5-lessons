@@ -3,11 +3,12 @@ package kz.cf.spring5.lesson5.domain;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users")
+@Table(name = "users_system")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_seq")
+    @SequenceGenerator(name="user_seq", sequenceName = "seq_user_id")
     private Long id;
     private String firstName;
     private String lastName;
