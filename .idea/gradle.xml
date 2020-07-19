@@ -54,6 +54,17 @@
             <option value="$PROJECT_DIR$/lesson6/webflux" />
             <option value="$PROJECT_DIR$/lesson6/webflux-boot" />
             <option value="$PROJECT_DIR$/lesson6/webflux-boot2" />
+            <option value="$PROJECT_DIR$/lesson7" />
+            <option value="$PROJECT_DIR$/lesson7/boot-soap" />
+            <option value="$PROJECT_DIR$/lesson7/boot-soap-client" />
+            <option value="$PROJECT_DIR$/lesson7/converter" />
+            <option value="$PROJECT_DIR$/lesson7/converter-multiple-types" />
+            <option value="$PROJECT_DIR$/lesson7/custom-formatter" />
+            <option value="$PROJECT_DIR$/lesson7/jsr349" />
+            <option value="$PROJECT_DIR$/lesson7/jsr349-assertTrue" />
+            <option value="$PROJECT_DIR$/lesson7/jsr349-custom" />
+            <option value="$PROJECT_DIR$/lesson7/property-editor" />
+            <option value="$PROJECT_DIR$/lesson7/spring-validator" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />

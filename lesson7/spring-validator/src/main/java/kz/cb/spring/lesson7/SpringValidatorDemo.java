@@ -20,8 +20,8 @@ public class SpringValidatorDemo {
 		GenericApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
 
 		Singer singer = new Singer();
-		singer.setFirstName(null);
-		singer.setLastName("Mayer");
+		singer.setFirstName("    ");
+		singer.setLastName(null);
 
 		Validator singerValidator = ctx.getBean("singerValidator", Validator.class);
 		BeanPropertyBindingResult result = new BeanPropertyBindingResult(singer, "John");
