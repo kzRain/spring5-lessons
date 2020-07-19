@@ -14,7 +14,7 @@ import javax.validation.Payload;
 @Constraint(validatedBy=CountrySingerValidator.class)
 @Documented
 public @interface CheckCountrySinger {
-    String message() default "Country Singer should have gender and last name defined";
+    String message() default "Певец кантри должен иметь имя и пол";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
