@@ -2,10 +2,8 @@ package com.codeforce.product.controllers;
 
 
 import com.codeforce.product.model.Container;
-import com.codeforce.product.model.State;
-import com.codeforce.product.service.ContainerService;
-import com.codeforce.product.service.StateService;
-import com.codeforce.product.utils.Form_UI;
+
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -73,7 +71,7 @@ public class ContainerControler {
                 return "container-edit";
             } else {
                 newContainer = containerService.save(container);
-                return "redirect:/containers/" + String.valueOf(newContainer.getId())+"//edit";
+                return "redirect:/containers/" + String.valueOf(newContainer.getId())+"/edit";
             }
 
 

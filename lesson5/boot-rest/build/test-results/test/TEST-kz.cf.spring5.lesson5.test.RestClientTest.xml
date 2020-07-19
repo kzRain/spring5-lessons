@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kz.cf.spring5.lesson5.test.RestClientTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-07-04T06:07:09" hostname="kcell30144" time="0.896">
+  <properties/>
+  <testcase name="testFindAll" classname="kz.cf.spring5.lesson5.test.RestClientTest" time="0.896"/>
+  <system-out><![CDATA[12:07:09,627 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+12:07:09,627 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+12:07:09,631 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/codeforce/pring5-lessons/lesson5/boot-rest/build/resources/test/logback.xml]
+12:07:09,631 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+12:07:09,631 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/C:/codeforce/pring5-lessons/lesson5/boot-rest/build/resources/test/logback.xml]
+12:07:09,631 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/C:/codeforce/pring5-lessons/lesson5/boot-rest/build/resources/main/logback.xml]
+12:07:09,751 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+12:07:09,751 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
+12:07:09,767 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@61176f96 - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
+12:07:09,767 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Starting LoggerContextListener
+12:07:09,767 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+12:07:09,771 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
+12:07:09,773 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+12:07:09,851 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [kz.cf.spring5.lesson5] to DEBUG
+12:07:09,851 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@61176f96 - Propagating DEBUG level on Logger[kz.cf.spring5.lesson5] onto the JUL framework
+12:07:09,851 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to DEBUG
+12:07:09,851 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@61176f96 - Propagating DEBUG level on Logger[org.springframework] onto the JUL framework
+12:07:09,851 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+12:07:09,851 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@61176f96 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+12:07:09,851 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
+12:07:09,851 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+12:07:09,857 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@58848e86 - Registering current configuration as safe fallback point
+
+12:07:10.517 [Test worker] INFO  k.c.s.l.t.RestClientTest - --> Testing retrieve all singers
+12:07:10.571 [Test worker] DEBUG o.s.w.c.RestTemplate - Created GET request for "http://localhost:8080/singer/listdata"
+12:07:10.603 [Test worker] DEBUG o.s.w.c.RestTemplate - Setting request Accept header to [application/json, application/*+json]
+12:07:10.631 [Test worker] DEBUG o.s.w.c.RestTemplate - GET request for "http://localhost:8080/singer/listdata" resulted in 200 (null)
+12:07:10.631 [Test worker] DEBUG o.s.w.c.RestTemplate - Reading [class [Lkz.cf.spring5.lesson5.entities.Singer;] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@63a0cb3]
+12:07:10.767 [Test worker] INFO  k.c.s.l.t.RestClientTest - Singer - Id: 1, First name: John Clayton, Last name: Mayer, Birthday: Sun Oct 16 06:00:00 ALMT 1977
+12:07:10.767 [Test worker] INFO  k.c.s.l.t.RestClientTest - Singer - Id: 2, First name: Eric, Last name: Clapton, Birthday: Fri Mar 30 06:00:00 ALMT 1945
+12:07:10.767 [Test worker] INFO  k.c.s.l.t.RestClientTest - Singer - Id: 4, First name: BB, Last name: King, Birthday: Mon Sep 16 06:00:00 ALMT 1940
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
