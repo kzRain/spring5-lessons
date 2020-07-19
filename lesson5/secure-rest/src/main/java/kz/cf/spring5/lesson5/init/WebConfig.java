@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by iuliana.cosmina on 6/5/17.
+ * Created by ruslan on 6/5/17.
  */
 @Configuration
 @EnableWebMvc

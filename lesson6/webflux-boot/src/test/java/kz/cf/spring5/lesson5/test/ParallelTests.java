@@ -4,7 +4,7 @@ import org.junit.experimental.ParallelComputer;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.JUnitCore;
 /**
- * Created by iuliana.cosmina on 8/6/17.
+ * Created by ruslan on 8/6/17.
  */
 
 public class ParallelTests {

@@ -14,7 +14,7 @@ import java.util.GregorianCalendar;
 import static org.junit.Assert.*;
 
 /**
- * Created by iuliana.cosmina on 6/17/17.
+ * Created by ruslan on 6/17/17.
  */
 public class RestClientTest {
 

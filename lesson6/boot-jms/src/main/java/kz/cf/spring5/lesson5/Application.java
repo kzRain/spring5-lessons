@@ -1,6 +1,6 @@
 package kz.cf.spring5.lesson5;
 /**
- * Created by iuliana.cosmina on 6/17/17.
+ * Created by ruslan on 6/17/17.
  */
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

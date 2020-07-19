@@ -13,7 +13,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 /**
- * Created by iuliana.cosmina on 6/22/17.
+ * Created by ruslan on 6/22/17.
  */
 @SpringBootApplication
 public class Application {

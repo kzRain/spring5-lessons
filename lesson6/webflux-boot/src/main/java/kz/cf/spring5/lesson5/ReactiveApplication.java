@@ -22,7 +22,7 @@ import java.time.Duration;
 import java.util.HashMap;
 
 /**
- * Created by iuliana.cosmina on 7/16/17.
+ * Created by ruslan on 7/16/17.
  */
 // Uncomment the @SpringBootApplication annotation here and comment all in the SingerApplication class, before running this class,
 // to use this RestController class

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
 /**
- * Created by iuliana.cosmina on 8/6/17.
+ * Created by ruslan on 8/6/17.
  */
 @Configuration
 public class TestConfig {

@@ -4,7 +4,7 @@ import kz.cf.spring5.lesson5.config.DataServiceConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
- * Created by iuliana.cosmina on 10/16/16.
+ * Created by ruslan on 10/16/16.
  */
 public class WebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 

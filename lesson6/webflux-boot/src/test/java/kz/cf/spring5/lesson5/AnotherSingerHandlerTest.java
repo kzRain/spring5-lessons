@@ -18,7 +18,7 @@ import java.util.GregorianCalendar;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Created by iuliana.cosmina on 8/5/17.
+ * Created by ruslan on 8/5/17.
  */
 public class AnotherSingerHandlerTest {
 

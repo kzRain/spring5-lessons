@@ -19,7 +19,7 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 /**
- * Created by iuliana.cosmina on 4/29/17.
+ * Created by ruslan on 4/29/17.
  */
 @Configuration
 @EnableJpaRepositories(basePackages = {"kz.cf.spring5.lesson5.repos"})

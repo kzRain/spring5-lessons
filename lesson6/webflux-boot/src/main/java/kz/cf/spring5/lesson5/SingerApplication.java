@@ -26,7 +26,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 import static org.springframework.web.reactive.function.server.ServerResponse.ok;
 
 /**
- * Created by iuliana.cosmina on 7/16/17.
+ * Created by ruslan on 7/16/17.
  */
 // Uncomment the annotations here and comment all in the ReactiveApplication class, before running this class,
 // to use the SingerHandler class

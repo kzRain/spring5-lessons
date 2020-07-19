@@ -13,7 +13,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.web.reactive.function.BodyInserters.fromObject;
 
 /**
- * Created by iuliana.cosmina on 7/16/17.
+ * Created by ruslan on 7/16/17.
  */
 @Component
 public class SingerHandler {

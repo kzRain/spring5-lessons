@@ -9,7 +9,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import java.io.IOException;
 
 /**
- * Created by iuliana.cosmina on 5/12/17.
+ * Created by ruslan on 5/12/17.
  */
 @SpringBootApplication(scanBasePackages = "kz.cf.spring5.lesson5")
 public class Application {

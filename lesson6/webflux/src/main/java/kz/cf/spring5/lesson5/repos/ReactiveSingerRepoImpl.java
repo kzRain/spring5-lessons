@@ -7,7 +7,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 /**
- * Created by iuliana.cosmina on 8/2/17.
+ * Created by ruslan on 8/2/17.
  */
 @Service
 public class ReactiveSingerRepoImpl implements ReactiveSingerRepo {

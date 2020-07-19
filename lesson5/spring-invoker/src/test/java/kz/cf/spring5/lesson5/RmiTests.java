@@ -16,7 +16,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by iuliana.cosmina on 6/5/17.
+ * Created by ruslan on 6/5/17.
  */
 @ContextConfiguration(classes = RmiClientConfig.class)
 @RunWith(SpringRunner.class)
