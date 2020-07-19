@@ -15,5 +15,10 @@ public class SingerValidator implements Validator {
     @Override
     public void validate(Object obj, Errors e) {
         ValidationUtils.rejectIfEmpty(e, "firstName", "firstName.empty");
+        ValidationUtils.rejectIfEmpty(e, "lastName", "lastName.empty");
+        ValidationUtils.rejectIfEmptyOrWhitespace(e,"firstName","firstName.rejectIfEmptyOrWhitespace");
+
+
+
     }
 }
