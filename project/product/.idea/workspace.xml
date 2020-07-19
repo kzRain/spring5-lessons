@@ -20,21 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74deebf4-9f32-4685-83f7-a384f6112de5" name="Default Changelist" comment="added tests for logger">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/BoxRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/BoxService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/config/Dbunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/config/Dbunit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Pack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Pack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/PackRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/PackRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PackService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PointService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PointService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/codeforce/product/service/MyPackRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/codeforce/product/service/MyPackRepoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +83,7 @@
       <recent name="com.codeforce.product.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MyPackRepoTest.StateRepoSaveTest">
+  <component name="RunManager" selected="Spring Boot.ProductApplication">
     <configuration name="BoxAndPointsTest.BoxAndPoints" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -222,6 +208,9 @@
       <updated>1593838484469</updated>
       <workItem from="1593838487453" duration="7164000" />
       <workItem from="1593961572794" duration="23056000" />
+      <workItem from="1594457101504" duration="248000" />
+      <workItem from="1595048968026" duration="144000" />
+      <workItem from="1595049190216" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="added tests for logger">
       <created>1593961203777</created>
@@ -257,6 +246,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1593929443068" />
+    <state x="464" y="293" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1594457180041">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="464" y="293" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1440.900@0.0.1440.900" timestamp="1594457180041" />
     <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1594049770690">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -265,38 +258,38 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1593958334642" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1594052083240">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1595003051464">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594052083240" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1594052083239">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595003051464" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1595003051463">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594052083239" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1594052083238">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1595003051463" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1595003051462">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594052083238" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1594052083239">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1595003051462" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1595003051463">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594052083239" />
-    <state width="1398" height="245" key="GridCell.Tab.1.bottom" timestamp="1594051496446">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1595003051463" />
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom" timestamp="1595003051465">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594051496446" />
-    <state width="1398" height="245" key="GridCell.Tab.1.center" timestamp="1594051496445">
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595003051465" />
+    <state width="1398" height="245" key="GridCell.Tab.1.center" timestamp="1595003051465">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1594051496445" />
-    <state width="1398" height="245" key="GridCell.Tab.1.left" timestamp="1594051496444">
+    <state width="1398" height="245" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1595003051465" />
+    <state width="1398" height="245" key="GridCell.Tab.1.left" timestamp="1595003051464">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1594051496444" />
-    <state width="1398" height="245" key="GridCell.Tab.1.right" timestamp="1594051496445">
+    <state width="1398" height="245" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1595003051464" />
+    <state width="1398" height="245" key="GridCell.Tab.1.right" timestamp="1595003051465">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1594051496445" />
+    <state width="1398" height="245" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1595003051465" />
     <state width="1398" height="304" key="GridCell.Tab.2.bottom" timestamp="1594045544726">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -325,13 +318,17 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="598" y="197" width="346" height="505" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1440.900@0.0.1440.900" timestamp="1594052039619" />
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593961581856">
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595049028940">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1593961581856" />
+    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1595049028940" />
     <state x="403" y="245" key="git4idea.merge.GitPullDialog" timestamp="1593961254939">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="403" y="245" key="git4idea.merge.GitPullDialog/0.0.1440.900@0.0.1440.900" timestamp="1593961254939" />
+    <state x="62" y="176" key="new project wizard" timestamp="1595049132974">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="62" y="176" key="new project wizard/0.23.1440.827@0.23.1440.827" timestamp="1595049132974" />
   </component>
 </project>

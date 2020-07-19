@@ -57,4 +57,15 @@ public class Singer {
 
 		return result;
 	}
+
+	@AssertTrue(message="Male Singer should have genre defined as POP")
+	public boolean isMalePop() {
+		boolean result = true;
+
+		if ((!genre.equals(Genre.POP)) && gender.equals(Gender.MALE)) {
+			result = false;
+		}
+
+		return result;
+	}
 }
