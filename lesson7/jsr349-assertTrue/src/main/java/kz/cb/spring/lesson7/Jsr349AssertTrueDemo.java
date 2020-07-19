@@ -1,6 +1,7 @@
 package kz.cb.spring.lesson7;
 
 import kz.cb.spring.lesson7.config.AppConfig;
+import kz.cb.spring.lesson7.obj.Gender;
 import kz.cb.spring.lesson7.obj.Genre;
 import kz.cb.spring.lesson7.obj.Singer;
 import org.slf4j.Logger;
@@ -25,7 +26,7 @@ public class Jsr349AssertTrueDemo {
 		singer.setFirstName("Johnny");
 		singer.setLastName("Mayer");
 		singer.setGenre(Genre.COUNTRY);
-		singer.setGender(null);
+		singer.setGender(Gender.MALE);
 
 		validateSinger(singer, singerValidationService);
 
