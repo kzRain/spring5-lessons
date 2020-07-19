@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter;
 
 /**
- * Created by iuliana.cosmina on 10/6/16.
+ * Created by ruslan on 10/6/16.
  */
 @Configuration
 public class HttpInvokerConfig {

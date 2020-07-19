@@ -1,0 +1,8 @@
+jar {
+	manifest {
+		attributes("Created-By"      : "Ruslan Beyganov",
+				"Specification-Title": "Pro Spring 5",
+				"Main-Class"         : "kz.cb.spring.lesson6.MultipleConvServDemo",
+				"Class-Path"         : configurations.compile.collect { it.getName() }.join(' '))
+	}
+}

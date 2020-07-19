@@ -21,7 +21,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.t
 import static org.springframework.web.reactive.function.server.ServerResponse.ok;
 
 /**
- * Created by iuliana.cosmina on 8/6/17.
+ * Created by ruslan on 8/6/17.
  */
 public class Server {
 	public static final String HOST = "localhost";

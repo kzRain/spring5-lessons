@@ -12,7 +12,7 @@ import reactor.util.function.Tuple2;
 import java.time.Duration;
 
 /**
- * Created by iuliana.cosmina on 8/6/17.
+ * Created by ruslan on 8/6/17.
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest

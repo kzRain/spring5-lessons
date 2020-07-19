@@ -19,7 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by iuliana.cosmina on 6/11/17.
+ * Created by ruslan on 6/11/17.
  */
 @Configuration
 @EnableJms

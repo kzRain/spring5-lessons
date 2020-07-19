@@ -24,7 +24,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Created by iuliana.cosmina on 8/3/17.
+ * Created by ruslan on 8/3/17.
  */
 public class SingerHandlerTest {
 

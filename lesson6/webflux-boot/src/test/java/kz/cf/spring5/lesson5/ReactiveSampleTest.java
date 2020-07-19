@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
 /**
- * Created by iuliana.cosmina on 8/5/17.
+ * Created by ruslan on 8/5/17.
  */
 public class ReactiveSampleTest {
 	private final Logger logger = LoggerFactory.getLogger(ReactiveSampleTest.class);

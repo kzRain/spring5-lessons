@@ -15,7 +15,13 @@ public class DBInit {
 
     @PostConstruct
     private void fillUser() {
-        User user = new User(1L,"Edna","Smith");
-        userRepository.save(user).subscribe();
+        User user1 = new User("Edna","Smith");
+        User user2 = new User("Edna","Smith");
+        User user3 = new User("Edna","Smith");
+        User user4 = new User("Edna","Smith");
+        userRepository.save(user1).subscribe();
+        userRepository.save(user2).subscribe();
+        userRepository.save(user3).subscribe();
+        userRepository.save(user4).subscribe();
     }
 }

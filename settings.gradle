@@ -50,6 +50,17 @@ include 'lesson6:webflux-boot'
 include 'lesson6:webflux-boot2'
 include 'lesson6:webflux'
 
+include 'lesson7:boot-soap'
+include 'lesson7:boot-soap-client'
+include 'lesson7:converter'
+include 'lesson7:converter-multiple-types'
+include 'lesson7:custom-formatter'
+include 'lesson7:jsr349'
+include 'lesson7:jsr349-assertTrue'
+include 'lesson7:jsr349-custom'
+include 'lesson7:property-editor'
+include 'lesson7:spring-validator'
+
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
 		'"Spring Pro, Fifth Edition" ' +
 		' published by CodeForce in order to learn and practice with all Spring Web libraries. ')

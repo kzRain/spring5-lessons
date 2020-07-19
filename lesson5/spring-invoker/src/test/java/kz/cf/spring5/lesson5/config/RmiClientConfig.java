@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean;
 
 /**
- * Created by iuliana.cosmina on 6/5/17.
+ * Created by ruslan on 6/5/17.
  */
 @Configuration
 public class RmiClientConfig {

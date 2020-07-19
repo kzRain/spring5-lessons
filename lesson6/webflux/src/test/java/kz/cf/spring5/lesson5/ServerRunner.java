@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.GenericApplicationContext;
 
 /**
- * Created by iuliana.cosmina on 8/6/17.
+ * Created by ruslan on 8/6/17.
  */
 public class ServerRunner {
 
