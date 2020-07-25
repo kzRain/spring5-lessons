@@ -61,6 +61,13 @@ include 'lesson7:jsr349-custom'
 include 'lesson7:property-editor'
 include 'lesson7:spring-validator'
 
+include 'lesson8:sockjs'
+include 'lesson8:sockjs-cfg'
+include 'lesson8:stomp'
+include 'lesson8:stomp-cfg'
+include 'lesson8:websocket-api'
+include 'lesson8:websocket-api-cfg'
+
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
 		'"Spring Pro, Fifth Edition" ' +
 		' published by CodeForce in order to learn and practice with all Spring Web libraries. ')

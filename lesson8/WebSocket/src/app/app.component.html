@@ -1,0 +1,64 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+  enabled. Please enable
+  Javascript and reload this page!</h2></noscript>
+<div id="main-content" class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+      <form class="form-inline">
+        <div class="form-group">
+          <label>Server 1 connection:</label>
+          <button (click)="connect1()" class="btn btn-default" type="submit">Connect</button>
+          <button (click)="disconnect1()" class="btn btn-default" type="submit" [disabled]="!connected">Disconnect
+          </button>
+        </div>
+      </form>
+      <form class="form-inline">
+        <div class="form-group">
+          <label>Server 2 connection:</label>
+          <button (click)="connect2()" class="btn btn-default" type="submit">Connect</button>
+          <button (click)="disconnect2()" class="btn btn-default" type="submit" [disabled]="!connected">Disconnect
+          </button>
+        </div>
+      </form>
+      <form class="form-inline">
+        <div class="form-group">
+          <label>Server 3 connection:</label>
+          <button (click)="connect3()" class="btn btn-default" type="submit">Connect</button>
+          <button (click)="disconnect3()" class="btn btn-default" type="submit" [disabled]="!connected">Disconnect
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="name">Ask your question</label>
+          <input type="text" [(ngModel)]="name" class="form-control" id="name" name="name"> <br>
+        </div>
+        <button (click)="sendMessage()" class="btn btn-default" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <form [formGroup]="messages">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Message</th>
+      </tr>
+      </thead>
+      <tbody formArrayName="Rows">
+      <tr *ngFor="let itemrow of messages.controls.Rows.value; let i=index;let l=last"
+          [formGroupName]="i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ itemrow.name }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+</div>
+
+<!--<pre>{{messages.value | json}}</pre>-->
+<router-outlet></router-outlet>
