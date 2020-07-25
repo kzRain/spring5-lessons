@@ -21,7 +21,7 @@ public class SpringValidatorDemo {
 
 		Singer singer = new Singer();
 		singer.setFirstName(" 2   ");
-		singer.setLastName(null);
+		singer.setLastName("a");
 
 		Validator singerValidator = ctx.getBean("singerValidator", Validator.class);
 		BeanPropertyBindingResult result = new BeanPropertyBindingResult(singer, "John");
