@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
+
 /*Alimbetov Ruslan*/
 @Repository
 public interface PackRepository extends PagingAndSortingRepository<Pack, Long>, JpaSpecificationExecutor<Pack> {
@@ -23,9 +24,6 @@ public interface PackRepository extends PagingAndSortingRepository<Pack, Long>, 
     List<Pack> findAllByWeigthLessThanEqualAndState(Double weight, State mystate);
 
     Optional<Pack> findPackByPackKey(String packkey);
-
-
-
 
 
 }

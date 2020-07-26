@@ -12,8 +12,8 @@ public class Box {
     private final Double height = 20.0;
     private final Double width = 30.0;
     private UUID uuid;
-    private boolean isFree=true;
-    @ManyToOne (cascade = CascadeType.ALL)
+    private boolean isFree = true;
+    @ManyToOne(cascade = CascadeType.ALL)
     private Point point;
     @OneToOne
     private Pack pack;

@@ -41,7 +41,7 @@ class ProjectLoggerApplicationTests {
     @Test
     void getAllLogsFromDb() {
         List<LogsDB> allLogs = logger.getAllLogs();
-        allLogs.forEach(x-> System.out.println(x.toString()));
+        allLogs.forEach(x -> System.out.println(x.toString()));
     }
 
 }

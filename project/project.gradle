@@ -11,7 +11,7 @@ subprojects {
     dependencies {
         compile misc.slf4jJcl, misc.logback, boot.starter,
                 boot.starterJpa, boot.starterTest, db.postgresql,
-        boot.starterWeb
+                boot.starterWeb
 //        testCompile testing.junit
         testImplementation('org.springframework.boot:spring-boot-starter-test') {
             exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'

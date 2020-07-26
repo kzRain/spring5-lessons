@@ -16,7 +16,7 @@ public class Dbunit {
     ContainerRepository containerRepository;
 
     @PostConstruct
-    public void pointInit(){
+    public void pointInit() {
 
         Container container = new Container();
         container.setCountry("Kazakhstan");
