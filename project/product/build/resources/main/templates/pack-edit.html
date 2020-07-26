@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title th:text="${add} ? 'Create a Pack' : 'Edit a Pack'"/>
+</head>
+<body>
+<h1 th:text="${add} ? 'Create a Pack:' : 'Edit a Pack:'"/>
+<a th:href="@{/packs/list}">Back to Packs List</a>
+<br/><br/>
+<form th:action="${add} ? @{/packs/add} : @{/packs/{packid}/edit(packid=${m_pack.id})}"
+      th:object="${m_pack}" method="POST">
+    <table border="1" style="width:50%">
+
+        <tr th:if="${m_pack.id}">
+            <td>ID</td>
+            <td th:utext="${m_pack.id}">...</td>
+        </tr>
+        <tr>
+            <td>packkey:</td>
+            <td><input type="text" size="40" th:field="*{packkey}"/>
+                <div th:if="${#fields.hasErrors('packkey')}" th:errors="*{packkey}"/>
+        </tr>
+        <tr>
+            <td>Pack weigth :</td>
+            <td>
+
+                <select th:field="*{weigth}">
+                    <option th:each="w : ${allWeigths}"
+                            th:value="${w.weigth}"
+                            th:text="${w.description}">State
+                    </option>
+                </select>
+
+                <div th:if="${#fields.hasErrors('weigth')}" th:errors="*{weigth}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td>
+                <select th:field="*{state.id}">
+                    <option th:each="st : ${allStates}"
+                            th:value="${st.id}"
+                            th:text="${st.state}">State
+                    </option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Qnumber</td>
+            <td>
+                <select th:field="*{container.id}">
+                    <option th:each="con : ${allContainers}"
+                            th:value="${con.id}"
+                            th:text="${con.qnumber}+' ['+${con.country}+' '+${con.city}+' '+${con.adress}+']'">Qnumber
+                    </option>
+                </select>
+            </td>
+
+    </table>
+
+    <input type="submit" th:value="${add} ? 'Create' : 'Update'"/>
+</form>
+
+<br/>
+
+<div th:if="${errorMessage}" th:utext="${errorMessage}" class="error"/>
+</body>
+</html>
