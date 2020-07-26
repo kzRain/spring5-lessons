@@ -41,6 +41,13 @@ public class Container {
     public Container() {
     }
 
+    public Container(@NotNull(message = "Country is requaired") @Size(min = 1, max = 100, message = "Size between 1 and 100 char") String country, @NotNull(message = "city is requaired") @Size(min = 1, max = 100, message = "Size between 1 and 100 char") String city, @NotNull(message = "adress is requaired") @Size(min = 10, max = 250, message = "Size between 10 and 100 char") String adress, @NotNull(message = "qnumber is requaired") @Size(min = 10, max = 100, message = "Size between 10 and 100 char") String qnumber) {
+        this.country = country;
+        this.city = city;
+        this.adress = adress;
+        this.qnumber = qnumber;
+    }
+
     public long getId() {
         return id;
     }
