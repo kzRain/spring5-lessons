@@ -26,7 +26,7 @@ public class Pack {
     private String packKey;
 
     @JsonIgnore
-    @ManyToOne (cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     private State state;
 
     @ManyToOne

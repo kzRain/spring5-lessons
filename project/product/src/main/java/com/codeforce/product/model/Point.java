@@ -17,7 +17,7 @@ public class Point {
     private UUID token;
     @OneToMany(cascade = CascadeType.ALL)
     private Set<Box> boxes = new HashSet<>();
-    @ManyToOne (cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     private Container container;
 
 

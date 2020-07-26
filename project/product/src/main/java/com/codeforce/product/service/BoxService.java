@@ -19,10 +19,9 @@ public class BoxService {
 
     public List<Box> getAllBoxes() {
         List<Box> boxList = boxRepository.findAll();
-        if (boxList.size()>0) {
+        if (boxList.size() > 0) {
             return boxList;
-        }
-        else {
+        } else {
             return new ArrayList<>();
         }
     }
@@ -30,15 +29,14 @@ public class BoxService {
     public List<Box> getAllFreeBoxes() {
         List<Box> boxList = boxRepository.findAll();
         List<Box> freeBoxes = new ArrayList<>();
-        if (boxList.size()>0) {
-            boxList.forEach(x->{
+        if (boxList.size() > 0) {
+            boxList.forEach(x -> {
                 if (x.isFree()) {
                     freeBoxes.add(x);
                 }
             });
             return freeBoxes;
-        }
-        else {
+        } else {
             return new ArrayList<>();
         }
     }

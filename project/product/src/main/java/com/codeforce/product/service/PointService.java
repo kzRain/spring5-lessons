@@ -13,27 +13,27 @@ import java.util.Set;
 
 @Service
 public class PointService {
-    
-   @Autowired
-   PointRepository pointRepository;
 
-   public ArrayList<Point> getAllFree() {
+    @Autowired
+    PointRepository pointRepository;
+
+    public ArrayList<Point> getAllFree() {
         return pointRepository.findAllFree();
-   }
+    }
 
-   public void addPackToBox(Pack pack, Point point) {
-       if (point.getBoxes().size() < point.getBoxNum()) {
-           Set<Box> boxesSet = point.getBoxes();
-           for (Box box : boxesSet) {
-               if (box.isFree()) {
-                   box.setPack(pack);
-                   box.setFree(false);
-                   break;
-               } else {
-                   return;
-               }
-           }
-       }
-   }
+    public void addPackToBox(Pack pack, Point point) {
+        if (point.getBoxes().size() < point.getBoxNum()) {
+            Set<Box> boxesSet = point.getBoxes();
+            for (Box box : boxesSet) {
+                if (box.isFree()) {
+                    box.setPack(pack);
+                    box.setFree(false);
+                    break;
+                } else {
+                    return;
+                }
+            }
+        }
+    }
 
 }

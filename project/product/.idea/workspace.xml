@@ -20,8 +20,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74deebf4-9f32-4685-83f7-a384f6112de5" name="Default Changelist" comment="added tests for logger">
+      <change afterPath="$PROJECT_DIR$/../.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/codeforce/product/service/ContainerServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/codeforce/product/service/PointServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson5/rest/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson5/rest/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson5/secure-rest/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson5/secure-rest/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson5/spring-invoker/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson5/spring-invoker/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lesson6/webflux/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson6/webflux/build/tmp/war/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/config/Dbunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/config/Dbunit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/controllers/ContainerControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/controllers/ContainerControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/controllers/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/controllers/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/controllers/PackControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/controllers/PackControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/controllers/StateControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/controllers/StateControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Pack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Pack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/ContainerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/ContainerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/PackRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/PackRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/StateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/StateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/UserImagesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/UserImagesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/repo/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/security/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/security/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/BoxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/BoxService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/ContainerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/ContainerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PackService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PointService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/PointService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/StateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/StateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeforce/product/utils/Form_UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeforce/product/utils/Form_UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/container-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/container-edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/container_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/container_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pack-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pack-edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pack_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pack_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pack_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pack_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/state-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/state-edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/state_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/state_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/state_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/state_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/uploadFile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadFile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/uploadStatus.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadStatus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/codeforce/product/ProductApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/codeforce/product/ProductApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/codeforce/product/service/MyPackRepoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/codeforce/product/service/MyPackRepoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/codeforce/product/service/ProjectLoggerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/codeforce/product/service/ProjectLoggerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project.gradle" beforeDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +94,28 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="product" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="product" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="product" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -52,6 +129,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="KonanWorkspace">
+    <executables />
   </component>
   <component name="ProjectId" id="1eCveWGKZJwzsh1hARaiuULjCh6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -70,6 +150,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../productmvn" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,6 +163,18 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.codeforce.product.service" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ProductApplication">
     <configuration name="BoxAndPointsTest.BoxAndPoints" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -211,6 +304,7 @@
       <workItem from="1594457101504" duration="248000" />
       <workItem from="1595048968026" duration="144000" />
       <workItem from="1595049190216" duration="15000" />
+      <workItem from="1595735510368" duration="2279000" />
     </task>
     <task id="LOCAL-00001" summary="added tests for logger">
       <created>1593961203777</created>
@@ -223,19 +317,20 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added tests for logger" />

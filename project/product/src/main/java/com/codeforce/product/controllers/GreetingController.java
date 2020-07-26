@@ -22,8 +22,8 @@ import java.util.Optional;
 @Controller
 public class GreetingController {
 
-@Autowired
-UserImagesRepository userImagesRepository;
+    @Autowired
+    UserImagesRepository userImagesRepository;
 
 
 //    @GetMapping("/")
@@ -64,7 +64,7 @@ UserImagesRepository userImagesRepository;
 
             // Get the file and save it somewhere
             byte[] bytes = file.getBytes();
-            UserImages img= new UserImages();
+            UserImages img = new UserImages();
             img.setUser_id(5L);
             img.setFilename(file.getOriginalFilename());
             img.setPicByte(bytes);
