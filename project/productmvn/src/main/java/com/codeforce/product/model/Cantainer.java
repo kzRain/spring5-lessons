@@ -9,7 +9,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "container")
-public class Container {
+public class Cantainer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -38,10 +38,10 @@ public class Container {
     @OneToMany(cascade = CascadeType.ALL)
     private Set<Point> points = new HashSet<>();
 
-    public Container() {
+    public Cantainer() {
     }
 
-    public Container(@NotNull(message = "Country is requaired") @Size(min = 1, max = 100, message = "Size between 1 and 100 char") String country, @NotNull(message = "city is requaired") @Size(min = 1, max = 100, message = "Size between 1 and 100 char") String city, @NotNull(message = "adress is requaired") @Size(min = 10, max = 250, message = "Size between 10 and 100 char") String adress, @NotNull(message = "qnumber is requaired") @Size(min = 10, max = 100, message = "Size between 10 and 100 char") String qnumber) {
+    public Cantainer(@NotNull(message = "Country is requaired") @Size(min = 1, max = 100, message = "Size between 1 and 100 char") String country, @NotNull(message = "city is requaired") @Size(min = 1, max = 100, message = "Size between 1 and 100 char") String city, @NotNull(message = "adress is requaired") @Size(min = 10, max = 250, message = "Size between 10 and 100 char") String adress, @NotNull(message = "qnumber is requaired") @Size(min = 10, max = 100, message = "Size between 10 and 100 char") String qnumber) {
         this.country = country;
         this.city = city;
         this.adress = adress;
@@ -111,9 +111,9 @@ public class Container {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Container)) return false;
+        if (!(o instanceof Cantainer)) return false;
 
-        Container container = (Container) o;
+        Cantainer container = (Cantainer) o;
 
         if (id != container.id) return false;
         if (country != null ? !country.equals(container.country) : container.country != null) return false;

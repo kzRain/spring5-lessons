@@ -1,7 +1,7 @@
 package com.codeforce.product.service;
 
-import com.codeforce.product.model.Container;
-import com.codeforce.product.model.Pack;
+import com.codeforce.product.model.*;
+
 import com.codeforce.product.repo.ContainerRepository;
 import com.codeforce.product.utils.Form_UI;
 import org.junit.jupiter.api.AfterAll;
@@ -14,7 +14,7 @@ import java.util.Optional;
 
 public class ContainerServiceTest {
 
-    private Container container;
+    private Cantainer container;
 
     @Autowired
     private ContainerRepository containerRepository;
@@ -24,9 +24,9 @@ public class ContainerServiceTest {
 
     @BeforeAll
     public void setUp() {
-        container = new Container(Form_UI.getCountryList().get(12), "Almaty", "Abay 12", "123");
+        container = new Cantainer(Form_UI.getCountryList().get(12), "Almaty", "Abay 12", "123");
         container = containerRepository.save(container);
-        Optional<Container> find = containerRepository.findById(container.getId());
+        Optional<Cantainer> find = containerRepository.findById(container.getId());
         Assert.isTrue(find.isPresent(), "Не создался контейнер");
     }
 
@@ -41,7 +41,7 @@ public class ContainerServiceTest {
     @AfterAll
     public void end() {
         containerRepository.delete(container);
-        Optional<Container> find = containerRepository.findById(container.getId());
+        Optional<Cantainer> find = containerRepository.findById(container.getId());
         Assert.isTrue(!find.isPresent(), "Контейнер не удалился");
     }
 }

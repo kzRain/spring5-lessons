@@ -19,9 +19,9 @@ public class Point {
     private UUID token;
     @OneToMany(cascade = CascadeType.ALL)
     private Set<Box> boxes = new HashSet<>();
-    @ManyToOne(cascade = CascadeType.ALL)
+   /* @ManyToOne(cascade = CascadeType.ALL)
     private Container container;
-
+*/
 
     public Point() {
     }
@@ -82,14 +82,14 @@ public class Point {
         this.boxes = boxes;
     }
 
-    public Container getContainer() {
+   /* public Container getContainer() {
         return container;
     }
-
-    public void setContainer(Container container) {
+*/
+   /* public void setContainer(Container container) {
         this.container = container;
     }
-
+*/
     @Override
     public String toString() {
         return "Point{" +
@@ -100,7 +100,7 @@ public class Point {
                 ", busy=" + busy +
                 ", token=" + token +
                 ", boxes=" + boxes +
-                ", container=" + container +
+               /* ", container=" + container +*/
                 '}';
     }
 

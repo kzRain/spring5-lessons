@@ -1,7 +1,7 @@
 package com.codeforce.product.service;
 
 
-import com.codeforce.product.model.Container;
+import com.codeforce.product.model.Cantainer;
 import com.codeforce.product.model.Pack;
 import com.codeforce.product.model.State;
 import com.codeforce.product.repo.ContainerRepository;
@@ -53,16 +53,16 @@ public class MyPackRepoTest {
 
     @Test
     public void ContainerRepoSaveTest() {
-        Container container1 = new Container();
+        Cantainer container1 = new Cantainer();
         container1.setCountry("USA");
         container1.setAdress("Ruszvelt AV H25");
         container1.setCity("NY");
-        Container container2 = new Container();
+        Cantainer container2 = new Cantainer();
         container2.setCountry("USA");
         container2.setAdress("Washington AV H38");
         ;
         container2.setCity("CA");
-        Container container3 = new Container();
+        Cantainer container3 = new Cantainer();
         container3.setCountry("RuSSIA");
         container3.setAdress("MOSCOW AV Ostankino8");
         ;
@@ -70,19 +70,19 @@ public class MyPackRepoTest {
         containerRepository.save(container1);
         containerRepository.save(container2);
         containerRepository.save(container3);
-        List<Container> containers = (List<Container>) containerRepository.findAll();
+        List<Cantainer> containers = (List<Cantainer>) containerRepository.findAll();
         assert (containers.size() == 3);
 
     }
 
     @Test
     public void ContainerServiceSaveTest() {
-        Container container1 = new Container();
+        Cantainer container1 = new Cantainer();
         container1.setCountry("KZ");
         container1.setAdress("Furmanov street");
         container1.setCity("Almaty");
         containerService.createOrUpdateContainer(container1);
-        List<Container> containers = (List<Container>) containerRepository.findAll();
+        List<Cantainer> containers = (List<Cantainer>) containerRepository.findAll();
         assert (containers.size() == 4);
 
     }
@@ -114,13 +114,13 @@ public class MyPackRepoTest {
     @Test
     public void pack_repo_serviceSave() {
         State myState = stateRepository.findDistinctFirstByStateContaining("Status2").get();
-        Container myContayner = containerService.getContainerById(7L);
+        Cantainer myContayner = containerService.getContainerById(7L);
         Pack myPack = new Pack();
         myPack.setId(0L);
         myPack.setWeigth(300D);
         myPack.setPackKey("ABCD03");
         myPack.setState(myState);
-        myPack.setContainer(myContayner);
+        myPack.setCantainer(myContayner);
         packService.createOrUpdatePack(myPack);
         Pack myPack2 = packService.getPackById(10L);
         myPack2.setState(stateRepository.findDistinctFirstByStateContaining("Status5").get());
@@ -138,7 +138,7 @@ public class MyPackRepoTest {
 
     @Test
     public void getAllPackByContainerTest() {
-        Container myc = containerService.getContainerById(7L);
+        Cantainer myc = containerService.getContainerById(7L);
 
         List<Pack> packliststate = (List<Pack>) packService.getAllPacksByContainer(myc);
         assert (packliststate.size() == 2);

@@ -1,7 +1,7 @@
 package com.codeforce.product.controllers;
 
 
-import com.codeforce.product.model.Container;
+import com.codeforce.product.model.Cantainer;
 import com.codeforce.product.model.Pack;
 import com.codeforce.product.model.State;
 import com.codeforce.product.service.ContainerService;
@@ -62,16 +62,16 @@ public class PackControler {
     public String showAddPack(Model model) {
         Pack myPack = new Pack();
         State myState = new State("n/d");
-        Container myContainer = new Container();
+        Cantainer myContainer = new Cantainer();
 
 
         myContainer.setQnumber("000000000");
         myPack.setState(myState);
-        myPack.setContainer(myContainer);
+        myPack.setCantainer(myContainer);
         myPack.setWeigth(100D);
 
         List<State> states = stateService.getAllStates();
-        List<Container> containers = containerService.getAllContainers();
+        List<Cantainer> containers = containerService.getAllContainers();
 
 
         model.addAttribute("add", true);
@@ -93,7 +93,7 @@ public class PackControler {
         try {
             if (bindingResult.hasErrors()) {
                 List<State> states = stateService.getAllStates();
-                List<Container> containers = containerService.getAllContainers();
+                List<Cantainer> containers = containerService.getAllContainers();
                 model.addAttribute("add", true);
                 model.addAttribute("allStates", states);
                 model.addAttribute("allContainers", containers);
@@ -102,8 +102,8 @@ public class PackControler {
             } else {
                 State selState = stateService.getStateById(pack.getState().getId());
                 pack.setState(selState);
-                Container selContainer = containerService.getContainerById(pack.getContainer().getId());
-                pack.setContainer(selContainer);
+                Cantainer selContainer = containerService.getContainerById(pack.getCantainer().getId());
+                pack.setCantainer(selContainer);
 
                 pack.setId(0l);
                 newPack = packService.createOrUpdatePack(pack);
@@ -127,7 +127,7 @@ public class PackControler {
         try {
 
             List<State> states = stateService.getAllStates();
-            List<Container> containers = containerService.getAllContainers();
+            List<Cantainer> containers = containerService.getAllContainers();
 
             pack = packService.getPackById(packid);
             model.addAttribute("add", false);
@@ -154,15 +154,15 @@ public class PackControler {
 
             State selState = stateService.getStateById(pack.getState().getId());
             pack.setState(selState);
-            Container selContainer = containerService.getContainerById(pack.getContainer().getId());
-            pack.setContainer(selContainer);
+            Cantainer selContainer = containerService.getContainerById(pack.getCantainer().getId());
+            pack.setCantainer(selContainer);
 
             packService.update(pack);
             return "redirect:/packs/" + String.valueOf(pack.getId()) + "//edit";
         } catch (Exception ex) {
 
             List<State> states = stateService.getAllStates();
-            List<Container> containers = containerService.getAllContainers();
+            List<Cantainer> containers = containerService.getAllContainers();
 
 
             String errorMessage = ex.getMessage();

@@ -17,6 +17,9 @@ public class Box {
     @OneToOne
     private Pack pack;
 
+
+    public Box() {
+    }
     public Long getId() {
         return id;
     }

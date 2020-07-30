@@ -1,7 +1,6 @@
 package com.codeforce.product.controllers;
 
-
-import com.codeforce.product.model.Container;
+import com.codeforce.product.model.Cantainer;
 import com.codeforce.product.service.ContainerService;
 import com.codeforce.product.utils.Form_UI;
 import org.slf4j.Logger;
@@ -36,7 +35,7 @@ public class ContainerControler {
     @GetMapping(value = "/list")
     public String getContainers_list(Model model,
                                      @RequestParam(value = "page", defaultValue = "1") int pageNumber) {
-        List<Container> containers = containerService.findAll(pageNumber, ROW_PER_PAGE);
+        List<Cantainer> containers = containerService.findAll(pageNumber, ROW_PER_PAGE);
 
         long count = containerService.count();
         boolean hasPrev = pageNumber > 1;
@@ -51,7 +50,7 @@ public class ContainerControler {
 
     @GetMapping(value = {"/add"})
     public String showAddContainer(Model model) {
-        Container myContainer = new Container();
+        Cantainer myContainer = new Cantainer();
         model.addAttribute("add", true);
         model.addAttribute("m_container", myContainer);
         model.addAttribute("allCountry", Form_UI.getCountryList());
@@ -61,9 +60,9 @@ public class ContainerControler {
 
     @PostMapping(value = "/add")
     public String addContainer(Model model,
-                               @ModelAttribute("m_container") @Valid Container container, BindingResult bindingResult) {
+                               @ModelAttribute("m_container") @Valid Cantainer container, BindingResult bindingResult) {
         String errorMessage;
-        Container newContainer;
+        Cantainer newContainer;
         try {
 
             if (bindingResult.hasErrors()) {
@@ -89,7 +88,7 @@ public class ContainerControler {
 
     @GetMapping(value = {"/{containerid}/edit"})
     public String showEditContainer(Model model, @PathVariable long containerid) {
-        Container container = null;
+        Cantainer container = null;
         try {
             container = containerService.getContainerById(containerid);
             model.addAttribute("add", false);
@@ -104,7 +103,7 @@ public class ContainerControler {
     @PostMapping(value = {"/{containerid}/edit"})
     public String updateContainer(Model model,
                                   @PathVariable long containerid,
-                                  @ModelAttribute("m_container") Container container) {
+                                  @ModelAttribute("m_container") Cantainer container) {
         try {
             container.setId(containerid);
             containerService.update(container);
@@ -121,7 +120,7 @@ public class ContainerControler {
     @GetMapping(value = {"/{containerid}/delete"})
     public String showDeleteContainerById(
             Model model, @PathVariable long containerid) {
-        Container container = null;
+        Cantainer container = null;
         try {
             container = containerService.getContainerById(containerid);
         } catch (Exception ex) {
