@@ -1,0 +1,13 @@
+dependencies {
+	compile project(':lesson9:base-test')
+	compile  misc.poi,
+		hibernate.validator, misc.validation, misc.javaEl, misc.glassfishEl
+}
+
+jar {
+	manifest {
+		attributes("Created-By"      : "Ruslan Beyganov",
+				"Specification-Title": "Pro Spring 5",
+				"Class-Path"         : configurations.compile.collect { it.getName() }.join(' '))
+	}
+}
