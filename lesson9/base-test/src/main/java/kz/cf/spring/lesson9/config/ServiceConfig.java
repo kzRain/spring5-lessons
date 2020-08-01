@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 /**
- * Created by iuliana.cosmina on 4/29/17.
+ * Created by ruslan beyganov on 4/29/17.
  */
 @Configuration
 @EnableJpaRepositories(basePackages = {"kz.cf.spring.lesson9.repos"})

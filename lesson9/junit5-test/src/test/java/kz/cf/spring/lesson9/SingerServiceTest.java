@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /**
- * Created by iuliana.cosmina on 6/25/17.
+ * Created by ruslan beyganov on 6/25/17.
  */
 @SpringJUnitConfig(classes = {SimpleTestConfig.class, ServiceConfig.class, DataConfig.class})
 @DisplayName("Integration SingerService Test")

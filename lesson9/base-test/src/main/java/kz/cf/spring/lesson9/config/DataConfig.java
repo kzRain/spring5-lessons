@@ -12,7 +12,7 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import javax.sql.DataSource;
 
 /**
- * Created by iuliana.cosmina on 6/25/17.
+ * Created by ruslan beyganov on 6/25/17.
  */
 @Profile("dev")
 @Configuration

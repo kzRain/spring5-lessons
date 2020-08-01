@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.*;
 
 /**
- * Created by iuliana.cosmina on 7/29/17.
+ * Created by ruslan beyganov on 7/29/17.
  */
 @Configuration
 @EnableWebSocket
