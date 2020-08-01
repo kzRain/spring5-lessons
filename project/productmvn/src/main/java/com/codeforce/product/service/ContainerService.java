@@ -1,6 +1,6 @@
 package com.codeforce.product.service;
 
-import com.codeforce.product.model.Container;
+import com.codeforce.product.model.Cantainer;
 import com.codeforce.product.repo.ContainerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -20,56 +20,56 @@ public class ContainerService {
     @Autowired
     ContainerRepository containerRepository;
 
-    public List<Container> getAllContainers() {
-        List<Container> containerlist = (List<Container>) containerRepository.findAll();
+    public List<Cantainer> getAllContainers() {
+        List<Cantainer> containerlist = (List<Cantainer>) containerRepository.findAll();
         if (containerlist.size() > 0) {
             return containerlist;
         } else {
-            return new ArrayList<Container>();
+            return new ArrayList<Cantainer>();
         }
     }
 
-    public Container getContainerById(Long id) {
-        Optional<Container> container = containerRepository.findById(id);
+    public Cantainer getContainerById(Long id) {
+        Optional<Cantainer> container = containerRepository.findById(id);
         if (container.isPresent()) {
             return container.get();
         }
         return null;
     }
 
-    public List<Container> getContainersByCountry(String Country) {
-        List<Container> containerlist = (List<Container>) containerRepository.findContainerByCountry(Country);
+    public List<Cantainer> getContainersByCountry(String Country) {
+        List<Cantainer> containerlist = (List<Cantainer>) containerRepository.findContainerByCountry(Country);
         if (containerlist.size() > 0) {
             return containerlist;
         } else {
-            return new ArrayList<Container>();
+            return new ArrayList<Cantainer>();
         }
     }
 
-    public List<Container> getContainersByCity(String city) {
-        List<Container> containerlist = (List<Container>) containerRepository.findContainersByCityContaining(city);
+    public List<Cantainer> getContainersByCity(String city) {
+        List<Cantainer> containerlist = (List<Cantainer>) containerRepository.findContainersByCityContaining(city);
         if (containerlist.size() > 0) {
             return containerlist;
         } else {
-            return new ArrayList<Container>();
+            return new ArrayList<Cantainer>();
         }
     }
 
-    public List<Container> getContainersByAdress(String adress) {
-        List<Container> containerlist = (List<Container>) containerRepository.findContainersByAdressContaining(adress);
+    public List<Cantainer> getContainersByAdress(String adress) {
+        List<Cantainer> containerlist = (List<Cantainer>) containerRepository.findContainersByAdressContaining(adress);
         if (containerlist.size() > 0) {
             return containerlist;
         } else {
-            return new ArrayList<Container>();
+            return new ArrayList<Cantainer>();
         }
     }
 
 
-    public Container createOrUpdateContainer(Container entity) {
-        Optional<Container> myState = containerRepository.findById(entity.getId());
+    public Cantainer createOrUpdateContainer(Cantainer entity) {
+        Optional<Cantainer> myState = containerRepository.findById(entity.getId());
 
         if (myState.isPresent()) {
-            Container newEntity = myState.get();
+            Cantainer newEntity = myState.get();
             newEntity.setCountry(entity.getCountry());
             newEntity.setPacks(entity.getPacks());
             newEntity.setAdress(entity.getAdress());
@@ -85,7 +85,7 @@ public class ContainerService {
     }
 
     public void deleteContainerById(Long id) {
-        Optional<Container> container = containerRepository.findById(id);
+        Optional<Cantainer> container = containerRepository.findById(id);
         if (container.isPresent()) {
             containerRepository.deleteById(id);
         }
@@ -97,15 +97,15 @@ public class ContainerService {
     }
 
 
-    public List<Container> findAll(int pageNumber, int rowPerPage) {
-        List<Container> containers = new ArrayList<>();
+    public List<Cantainer> findAll(int pageNumber, int rowPerPage) {
+        List<Cantainer> containers = new ArrayList<>();
         Pageable sortedByIdAsc = PageRequest.of(pageNumber - 1, rowPerPage,
                 Sort.by("id").ascending());
         containerRepository.findAll(sortedByIdAsc).forEach(containers::add);
         return containers;
     }
 
-    public Container save(Container container) {
+    public Cantainer save(Cantainer container) {
         if (!StringUtils.isEmpty(container.getQnumber())) {
             if (existsById(container.getId())) {
                 System.out.println("State with id: " + container.getId() + " already exists");
@@ -118,7 +118,7 @@ public class ContainerService {
 
     }
 
-    public void update(Container container) {
+    public void update(Cantainer container) {
         if (!StringUtils.isEmpty(container.getQnumber())) {
             if (!existsById(container.getId())) {
                 System.out.println("Cannot find Contact with id: " + container.getId());

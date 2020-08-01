@@ -1,6 +1,6 @@
 package com.codeforce.product.repo;
 
-import com.codeforce.product.model.Container;
+import com.codeforce.product.model.Cantainer;
 import com.codeforce.product.model.Pack;
 import com.codeforce.product.model.State;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
@@ -16,7 +16,7 @@ public interface PackRepository extends PagingAndSortingRepository<Pack, Long>, 
 
     List<Pack> findAllByState(State mySate);
 
-    List<Pack> findAllByContainer(Container myContainer);
+    List<Pack> findAllByContainer(Cantainer myContainer);
 
     List<Pack> findAllByWeigthGreaterThanEqualAndState(Double weight, State mystate);
 

@@ -1,6 +1,6 @@
 package com.codeforce.product.restController;
 
-import com.codeforce.product.model.Container;
+import com.codeforce.product.model.Cantainer;
 import com.codeforce.product.service.ContainerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -19,21 +19,21 @@ public class ContainerRestController {
     ContainerService containerService;
 
     @GetMapping
-    public ResponseEntity<List<Container>> getAllContainers() {
-        List<Container> list = containerService.getAllContainers();
-        return new ResponseEntity<List<Container>>(list, new HttpHeaders(), HttpStatus.OK);
+    public ResponseEntity<List<Cantainer>> getAllContainers() {
+        List<Cantainer> list = containerService.getAllContainers();
+        return new ResponseEntity<List<Cantainer>>(list, new HttpHeaders(), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Container> getContainerById(@PathVariable("id") Long id) {
-        Container entity = containerService.getContainerById(id);
-        return new ResponseEntity<Container>(entity, new HttpHeaders(), HttpStatus.OK);
+    public ResponseEntity<Cantainer> getContainerById(@PathVariable("id") Long id) {
+        Cantainer entity = containerService.getContainerById(id);
+        return new ResponseEntity<Cantainer>(entity, new HttpHeaders(), HttpStatus.OK);
     }
 
     @PostMapping
-    public ResponseEntity<Container> createOrUpdateContainer(Container container) {
-        Container updated = containerService.createOrUpdateContainer(container);
-        return new ResponseEntity<Container>(updated, new HttpHeaders(), HttpStatus.OK);
+    public ResponseEntity<Cantainer> createOrUpdateContainer(Cantainer container) {
+        Cantainer updated = containerService.createOrUpdateContainer(container);
+        return new ResponseEntity<Cantainer>(updated, new HttpHeaders(), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")

@@ -19,7 +19,7 @@ public class Dbunit {
     @PostConstruct
     public void pointInit() {
 
-        Container container = new Container();
+        Cantainer container = new Cantainer();
         container.setCountry("Kazakhstan");
         container.setCity("Almaty");
         container.setAdress("Mendikulova");
@@ -30,7 +30,7 @@ public class Dbunit {
         state.setDescription("Awaiting transportation to Point");
 
         Pack pack = new Pack();
-        pack.setContainer(container);
+        pack.setCantainer(container);
         pack.setPackKey("DE-KZ Air-Delivery");
         pack.setWeigth(10.0);
         pack.setState(state);
@@ -38,7 +38,7 @@ public class Dbunit {
         container.addPack(pack);
 
         Point point = new Point();
-        point.setContainer(container);
+      //  point.set(container);
         point.setBoxNum(10);
         point.setAddress("Nazarbayev street");
         point.setToken(UUID.randomUUID());

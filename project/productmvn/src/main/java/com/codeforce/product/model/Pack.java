@@ -28,7 +28,7 @@ public class Pack {
     private State state;
 
     @ManyToOne
-    private Container container;
+    private Cantainer container;
 
     @ManyToOne
     private Point point;
@@ -72,11 +72,11 @@ public class Pack {
         this.state = state;
     }
 
-    public Container getContainer() {
+    public Cantainer getCantainer() {
         return container;
     }
 
-    public void setContainer(Container container) {
+    public void setCantainer(Cantainer container) {
         this.container = container;
     }
 }

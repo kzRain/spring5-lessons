@@ -1,6 +1,6 @@
 package com.codeforce.product.service;
 
-import com.codeforce.product.model.Container;
+import com.codeforce.product.model.Cantainer;
 import com.codeforce.product.model.Pack;
 import com.codeforce.product.model.State;
 import com.codeforce.product.repo.PackRepository;
@@ -40,7 +40,7 @@ public class PackService {
         }
     }
 
-    public List<Pack> getAllPacksByContainer(Container myContainer) {
+    public List<Pack> getAllPacksByContainer(Cantainer myContainer) {
         List<Pack> packlist = (List<Pack>) packRepository.findAllByContainer(myContainer);
         if (packlist.size() > 0) {
             return packlist;
@@ -94,7 +94,7 @@ public class PackService {
             newEntity.setState(entity.getState());
             newEntity.setPackKey(entity.getPackKey());
             newEntity.setWeigth(entity.getWeigth());
-            newEntity.setContainer(entity.getContainer());
+            newEntity.setCantainer(entity.getCantainer());
 
             newEntity = packRepository.save(newEntity);
 

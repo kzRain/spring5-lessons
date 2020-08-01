@@ -3,3 +3,5 @@
 .idea
 /.gradle/
 /.idea/
+/project/product/build/
+/project/productmvn/product.iml
