@@ -14,9 +14,11 @@ import kz.cf.spring.lesson9.services.SingerService;
 import org.junit.Before;
 import org.junit.Test;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.ui.ExtendedModelMap;
 
+@Profile("test")
 public class SingerControllerTest {
     private final List<Singer> singers = new ArrayList<>();
 

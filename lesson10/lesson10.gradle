@@ -1,0 +1,15 @@
+subprojects {
+    group 'kz.cf.spring.lesson10'
+    apply plugin: 'java'
+
+    /*Task that copies all the dependencies under build/libs */
+    task copyDependencies(type: Copy) {
+        from configurations.compile
+        into 'build/libs'
+    }
+
+    dependencies {
+        //we specify these dependencies for all submodules, except the boot module, that defines its own
+            compile boot.starterWeb, boot.starterRabbitmq, misc.slf4jJcl, misc.logback
+    }
+}
