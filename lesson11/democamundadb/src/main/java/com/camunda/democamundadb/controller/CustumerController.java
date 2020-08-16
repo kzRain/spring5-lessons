@@ -1,17 +1,16 @@
 package com.camunda.democamundadb.controller;
 
-import com.camunda.democamundadb.delegate.LoggerDelegate;
 import com.camunda.democamundadb.model.Customer;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.logging.Logger;
 
 
-@org.springframework.stereotype.Controller
-public class Controller {
+@Controller
+public class CustumerController {
 
-
-    private Logger logger = Logger.getLogger(Controller.class.getName());
+    private Logger logger = Logger.getLogger(CustumerController.class.getName());
     
     @GetMapping("/customer")
     @ResponseBody
