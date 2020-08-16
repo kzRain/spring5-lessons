@@ -25,7 +25,7 @@ public class CustumerController {
         
         Customer customer = new Customer(name,age);
 
-        Customer customeresult = restTemplate.getForObject(uri, Customer.class);
+        Customer customeresult = restTemplate.getForObject(uri, Customer.class, customer);
 
 
 
