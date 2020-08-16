@@ -6,7 +6,7 @@ import java.util.List;
 public class Customer  {
     private String name;
     private Integer age;
-    private List<String> GenerList ;
+    private List<Movie> movieList ;
 
     public Customer(String name, Integer age) {
         this.name = name;
@@ -29,11 +29,11 @@ public class Customer  {
         this.age = age;
     }
 
-    public List<String> getGenerList() {
-        return GenerList;
+    public List<Movie> getMovieList() {
+        return movieList;
     }
 
-    public void setGenerList(List<String> generList) {
-        GenerList = generList;
+    public void setMovieList(List<Movie> movieList) {
+        this.movieList = movieList;
     }
 }
