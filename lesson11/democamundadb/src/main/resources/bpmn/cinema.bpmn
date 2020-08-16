@@ -28,10 +28,6 @@
       <bpmn:incoming>Flow_1b2xz1a</bpmn:incoming>
       <bpmn:outgoing>Flow_0xnm29d</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:task id="Activity_02zpvh0" name="Нет доступных фильмов">
-      <bpmn:incoming>Flow_0gjsxj9</bpmn:incoming>
-      <bpmn:outgoing>Flow_19dnf8c</bpmn:outgoing>
-    </bpmn:task>
     <bpmn:sequenceFlow id="Flow_0gjsxj9" sourceRef="Gateway_1w00nh0" targetRef="Activity_02zpvh0">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">#{count==0}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
@@ -43,6 +39,10 @@
       <bpmn:incoming>Flow_0xnm29d</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_0xnm29d" sourceRef="Activity_0ez5ufh" targetRef="Event_0akeq78" />
+    <bpmn:serviceTask id="Activity_02zpvh0" name="Нет доступных фильмов" camunda:class="com.camunda.democamundadb.delegate.LoggerDelegate">
+      <bpmn:incoming>Flow_0gjsxj9</bpmn:incoming>
+      <bpmn:outgoing>Flow_19dnf8c</bpmn:outgoing>
+    </bpmn:serviceTask>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1vl564u">
@@ -93,14 +93,14 @@
       <bpmndi:BPMNShape id="Activity_14hk444_di" bpmnElement="Activity_0ez5ufh">
         <dc:Bounds x="710" y="137" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_02zpvh0_di" bpmnElement="Activity_02zpvh0">
-        <dc:Bounds x="710" y="250" width="100" height="80" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_1tcl4gi_di" bpmnElement="Event_1tcl4gi">
         <dc:Bounds x="882" y="272" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_0akeq78_di" bpmnElement="Event_0akeq78">
         <dc:Bounds x="882" y="159" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0rjs32i_di" bpmnElement="Activity_02zpvh0">
+        <dc:Bounds x="710" y="250" width="100" height="80" />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
