@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_07f5boi" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="3.7.3">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_07f5boi" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="3.7.3">
   <bpmn:collaboration id="Collaboration_1vl564u">
     <bpmn:participant id="Participant_19gf0je" processRef="Cinema_Proc_ID" />
   </bpmn:collaboration>
@@ -7,19 +7,15 @@
     <bpmn:startEvent id="StartEvent_1">
       <bpmn:outgoing>Flow_0303dhl</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:sequenceFlow id="Flow_0303dhl" sourceRef="StartEvent_1" targetRef="Activity_11y0619" />
-    <bpmn:serviceTask id="Activity_11y0619" name="Проверка пользователя" camunda:class="com.camunda.democamundadb.delegate.CheckCustomerDelegate">
-      <bpmn:incoming>Flow_0303dhl</bpmn:incoming>
-      <bpmn:outgoing>Flow_1aajkpi</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:sequenceFlow id="Flow_1aajkpi" sourceRef="Activity_11y0619" targetRef="Activity_0xlpq49" />
-    <bpmn:exclusiveGateway id="Gateway_1w00nh0" default="Flow_1b2xz1a">
+    <bpmn:exclusiveGateway id="Gateway_1w00nh0">
       <bpmn:incoming>Flow_193hpkx</bpmn:incoming>
       <bpmn:outgoing>Flow_1b2xz1a</bpmn:outgoing>
       <bpmn:outgoing>Flow_0gjsxj9</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="Flow_193hpkx" sourceRef="Activity_0xlpq49" targetRef="Gateway_1w00nh0" />
-    <bpmn:sequenceFlow id="Flow_1b2xz1a" sourceRef="Gateway_1w00nh0" targetRef="Activity_0ez5ufh" />
+    <bpmn:sequenceFlow id="Flow_1b2xz1a" sourceRef="Gateway_1w00nh0" targetRef="Activity_0ez5ufh">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">#{count&gt;0}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
     <bpmn:serviceTask id="Activity_0xlpq49" name="Проверка списка жанров" camunda:class="com.camunda.democamundadb.delegate.CheckMovieDelegate">
       <bpmn:incoming>Flow_1aajkpi</bpmn:incoming>
       <bpmn:outgoing>Flow_193hpkx</bpmn:outgoing>
@@ -43,11 +39,32 @@
       <bpmn:incoming>Flow_0gjsxj9</bpmn:incoming>
       <bpmn:outgoing>Flow_19dnf8c</bpmn:outgoing>
     </bpmn:serviceTask>
+    <bpmn:boundaryEvent id="Event_07qi8j7" attachedToRef="Activity_0xlpq49">
+      <bpmn:outgoing>Flow_002kxp1</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_03sbr95">
+        <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">2000</bpmn:timeDuration>
+      </bpmn:timerEventDefinition>
+    </bpmn:boundaryEvent>
+    <bpmn:sequenceFlow id="Flow_002kxp1" sourceRef="Event_07qi8j7" targetRef="Activity_10kiq5w" />
+    <bpmn:sequenceFlow id="Flow_0wr8x5n" sourceRef="Activity_10kiq5w" targetRef="Event_1e833uc" />
+    <bpmn:endEvent id="Event_1e833uc">
+      <bpmn:incoming>Flow_0wr8x5n</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="Activity_10kiq5w" name="Упущен момент" camunda:class="com.camunda.democamundadb.delegate.LoggerDelegate">
+      <bpmn:incoming>Flow_002kxp1</bpmn:incoming>
+      <bpmn:outgoing>Flow_0wr8x5n</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_11y0619" name="Проверка пользователя" camunda:class="com.camunda.democamundadb.delegate.CheckCustomerDelegate">
+      <bpmn:incoming>Flow_0303dhl</bpmn:incoming>
+      <bpmn:outgoing>Flow_1aajkpi</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_1aajkpi" sourceRef="Activity_11y0619" targetRef="Activity_0xlpq49" />
+    <bpmn:sequenceFlow id="Flow_0303dhl" sourceRef="StartEvent_1" targetRef="Activity_11y0619" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1vl564u">
       <bpmndi:BPMNShape id="Participant_19gf0je_di" bpmnElement="Participant_19gf0je" isHorizontal="true">
-        <dc:Bounds x="129" y="52" width="889" height="338" />
+        <dc:Bounds x="129" y="52" width="889" height="458" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0303dhl_di" bpmnElement="Flow_0303dhl">
         <di:waypoint x="215" y="177" />
@@ -78,6 +95,14 @@
         <di:waypoint x="810" y="177" />
         <di:waypoint x="882" y="177" />
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_002kxp1_di" bpmnElement="Flow_002kxp1">
+        <di:waypoint x="500" y="235" />
+        <di:waypoint x="500" y="370" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0wr8x5n_di" bpmnElement="Flow_0wr8x5n">
+        <di:waypoint x="550" y="410" />
+        <di:waypoint x="882" y="410" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="179" y="159" width="36" height="36" />
       </bpmndi:BPMNShape>
@@ -101,6 +126,15 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0rjs32i_di" bpmnElement="Activity_02zpvh0">
         <dc:Bounds x="710" y="250" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1e833uc_di" bpmnElement="Event_1e833uc">
+        <dc:Bounds x="882" y="392" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_14g2tyl_di" bpmnElement="Activity_10kiq5w">
+        <dc:Bounds x="450" y="370" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_01gylh9_di" bpmnElement="Event_07qi8j7">
+        <dc:Bounds x="482" y="199" width="36" height="36" />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
