@@ -9,7 +9,16 @@ public class LoggerDelegate implements JavaDelegate {
 
     private Logger logger = Logger.getLogger(LoggerDelegate.class.getName());
     @Override
-    public void execute(DelegateExecution delegateExecution) throws Exception {
-        logger.info(delegateExecution.getVariable("count").toString());
+    public void execute(DelegateExecution execution) throws Exception {
+        logger.info("... execution(processDefinitionId = " + execution.getProcessDefinitionId() +
+                " currentActivityName = " + execution.getCurrentActivityName() +
+                " currentActivityId = " + execution.getCurrentActivityId() +
+                " processInstanceId = " + execution.getProcessInstanceId() +
+                " processBusinessKey = " + execution.getProcessBusinessKey() +
+                " currentTransitionId = " + execution.getCurrentTransitionId() +
+                " id = " + execution.getId() +
+                " list = " + execution.getVariable("customer") +
+                " token = " + execution.getVariable("count") +
+                ")");
     }
 }

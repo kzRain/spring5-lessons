@@ -73,6 +73,10 @@ include 'lesson9:integration-test'
 include 'lesson9:mvc-unit-test'
 include 'lesson9:junit5-test'
 
+include 'lesson12:singer-webapp-xml'
+include 'lesson12:singer-webapp-jcfg'
+include 'lesson12:singer-webapp-boot'
+
 println(' This project is a collection of simple code samples. It is meant to be used together with the ' +
 		'"Spring Pro, Fifth Edition" ' +
 		' published by CodeForce in order to learn and practice with all Spring Web libraries. ')
